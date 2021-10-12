@@ -88,11 +88,7 @@ nav{
 .section2{
     width: 100%;
     height: 522px;
-    background: url(../img/Cherta.png) 50% 26%  no-repeat,
-    url(../img/Nout.png) 27.8% 52%  no-repeat, 
-    url(../img/Znak.png) 42% 52%  no-repeat, 
-    url(../img/Rocket.png) 58% 52%  no-repeat, 
-    url(../img/G-n.png) 72.2% 52%  no-repeat, 
+    background: url(../img/Cherta.png) 50% 26%  no-repeat, 
     url(../img/ChtoYaUmeu.jpg) center/cover no-repeat;
 }
 .title2 h2{
@@ -102,22 +98,37 @@ nav{
     text-align: center;
     line-height: 164px;
 }
+.title2 img{
+    height: 40px;
+}
+.Nout{
+    margin: 100px 0px 0px 515px;
+}
+.Znak{
+    margin: 100px 0px 0px 180px;
+}
+.Rocket{
+    margin: 100px 0px 0px 225px;
+}
+.G-n{
+    margin: 100px 600px 0px 170px;
+}
 .title2 li{
     color: #eb7800;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    text-transform:none;
-    padding: 130px 23px;
+    text-transform: none;
+    padding: 40px 23px;
 }
 .section3{
     width: 100%;
     height: 2006px;
 }
 .section3 h2{
+    padding-top: 60px;
     font-size: 36px;
     color: #2a3e51;
     font-weight: bold;
-    text-align: center;
-    
+    text-align: center;  
 }
