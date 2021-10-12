@@ -1,0 +1,123 @@
+body{
+    font-family: Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #2a3e51;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 390px;
+    float: left
+}
+.menu{
+    float: left;
+    padding-left: 432px;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: white;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+}
+.title__container{
+    float: left;
+    margin: 432px 0px 0px 404px;
+    color: #2a3e51;
+    text-align: center;
+}
+.title__container h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.title__container h4{
+    margin-top: 40px;
+    font-size: 22px;
+    color: #76828e;
+}
+.title__container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #2a3e51;
+    background: none;
+    border-radius: 5px;
+    color: #76828e;
+    font-size:13px;
+    padding: 0px 16px;
+    margin: 50px 20px 0px 14px;
+}
+.section1{
+    text-align: center;
+    width: 100%;
+    height: 720px;
+    background: url(../img/Cherta.png) 50% 10%  no-repeat, url(../img/Boy1.png) 50% 27% no-repeat, url(../img/Fon1.jpg) center/cover no-repeat;
+}
+.title1 h2{
+    font-size: 36px;
+    color: #2a3e51;
+    font-weight: bold;
+    margin-top: 110px;
+}
+.title1 h5{
+    font-size: 20px;
+    color: #76828e;
+    margin: 340px 400px 0px 400px;
+
+}
+.title1 input{
+    font-size: 20px;
+    border: 2px solid #2a3e51;
+    border-radius: 5px;
+    padding: 5px 25px;
+    margin: 40px 20px 0px 14px;
+    background: url(../img/Icon.png) 5% 50%/auto 70% no-repeat;
+    padding-left: 40px;
+}
+
+
+.section2{
+    width: 100%;
+    height: 522px;
+    background: url(../img/Cherta.png) 50% 26%  no-repeat, 
+    url(../img/ChtoYaUmeu.jpg) center/cover no-repeat;
+}
+.title2 h2{
+    font-size: 36px;
+    color: #2a3e51;
+    font-weight: bold;
+    text-align: center;
+    line-height: 164px;
+}
+.title2 img{
+    height: 40px;
+    margin-top: 108px;
+}
+.title2 li{
+    color: #eb7800;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: none;
+    padding: 130px 23px;
+}
+.section3{
+    width: 100%;
+    height: 2006px;
+}
+.section3 h2{
+    padding-top: 30px;
+    font-size: 36px;
+    color: #2a3e51;
+    font-weight: bold;
+    text-align: center;  
+}
