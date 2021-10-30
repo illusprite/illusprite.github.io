@@ -96,28 +96,433 @@ nav{
     color: #2a3e51;
     font-weight: bold;
     text-align: center;
-    line-height: 164px;
+    line-height: 140px;
 }
 .title2 img{
     height: 40px;
-    margin-top: 108px;
+
 }
-.title2 li{
+.Option{
+    margin: 112px 0px 0px 0px;
+    text-align: center;
+}
+
+.Nout{
+    float: left;
+    height: 120px;
+    width: 200px;
+    margin: 60px 0px 0px 300px;
+    text-align: center;    
+}
+.Nout h5{
+    margin-top: 40px;
     color: #eb7800;
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
-    text-transform: none;
-    padding: 130px 23px;
 }
+.Nout p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #76828e;
+}
+
+.Znak{
+    float: left;
+    height: 120px;
+    width: 200px;
+    margin: 60px 0px 0px 160px;
+    text-align: center;
+}
+.Znak h5{
+    margin-top: 40px;
+    color: #eb7800;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Znak p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #76828e;
+}
+
+.Rocket{
+    float: left;
+    height: 120px;
+    width: 200px;
+    margin: 60px 0px 0px 160px;
+    text-align: center;
+}
+.Rocket h5{
+    margin-top: 40px;
+    color: #eb7800;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Rocket p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #76828e;
+}
+
+.G-n{
+    float: left;
+    height: 120px;
+    width: 200px;
+    margin: 60px 0px 0px 160px;
+    text-align: center;    
+}
+.G-n h5{
+    margin-top: 40px;
+    color: #eb7800;
+    font-size: 18px;
+    font-weight: bold;
+}
+.G-n p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #76828e;
+}
+
 .section3{
     width: 100%;
     height: 2006px;
+    background: url(../img/Cherta.png) 50% 9%  no-repeat;
 }
 .section3 h2{
-    padding-top: 30px;
+    padding-top: 110px;
+    padding-bottom: 80px;
     font-size: 36px;
     color: #2a3e51;
     font-weight: bold;
     text-align: center;  
+}
+.text{
+    font-size: 20px;
+    color: #76828e;
+    margin: 0px 400px 50px 400px;
+}
+.Fon3{
+    text-align: center;
+}
+.section3 h3{
+    font-size: 28px;
+    color: #2a3e51;
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+.section3 h5{
+    margin-bottom: 10px;
+    color: #2a3e51;
+}
+
+.Fon3text1{
+    margin: 0px 0px 0px 370px;
+    float: left;   
+    color: #2a3e51;
+}
+.Fon3text2{
+    padding-left: 800px;
+    padding-right: 370px;
+    color: #2a3e51;
+}
+.Fon3text2 p{
+    line-height: 20px;
+    color: #2a3e51;
+
+}
+.Fon3text2 input{
+    height: 44px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid #00b6af;
+    background: #00b6af;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size:18px;
+    padding: 0px 16px;
+    margin: 30px 0px 120px -430px;
+}
+.TypeSite h2{
+    font-size: 28px;
+    margin: -150px 0px -70px -740px;
+}
+.TypeSite select{
+    width: 900px;
+    height: 54px;
+    text-align: center;
+    border: 2px solid #eeeeee;
+    background: #eeeeee;
+    padding: 0px 20px;
+    margin: 0px 0px -100px 500px;
+}
+.DesignSite h2{
+    font-size: 28px;
+    margin: 0px 0px -70px -770px;
+}
+.DesignSite select{
+    width: 900px;
+    height: 54px;
+    text-align: center;
+    border: 2px solid #eeeeee;
+    background: #eeeeee;
+    padding: 0px 20px;
+    margin: 0px 0px -100px 500px;
+}
+.Adapt h2{
+    font-size: 28px;
+    margin: 0px 0px -70px -660px;
+}
+.Adapt select{
+    width: 900px;
+    height: 54px;
+    text-align: center;
+    border: 2px solid #eeeeee;
+    background: #eeeeee;
+    padding: 0px 20px;
+    margin: 0px 0px -100px 500px;
+}
+.Itog{
+    margin: 50px 0px 60px 500px;
+    
+}
+.Itog h3{
+    font-size: 20px;
+
+}
+.section4{
+    width: 100%;
+    height: 500px;
+    background: url(../img/Cherta.png) 50% 32%  no-repeat, 
+    url(../img/Fon2.jpg) 50% 50%  no-repeat;
+}
+.section4 h2{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    font-size: 36px;
+    color: #2a3e51;
+    font-weight: bold;
+    text-align: center;  
+}
+
+.Smile{
+    float: left;
+    height: 120px;
+    width: 280px;
+    margin: 60px 0px 0px -160px;
+    text-align: center;    
+}
+.Smile h5{
+    margin-top: 20px;
+    color: #283c4f;
+    font-size: 30px;
+    font-weight: bold;
+}
+.Smile p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #283c4f;
+}
+
+.Znak2{
+    float: left;
+    height: 120px;
+    width: 280px;
+    margin: 60px 0px 0px 80px;
+    text-align: center;
+}
+.Znak2 h5{
+    margin-top: 20px;
+    color: #283c4f;
+    font-size: 30px;
+    font-weight: bold;
+}
+.Znak2 p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #283c4f;
+}
+
+.Galochka{
+    float: left;
+    height: 120px;
+    width: 280px;
+    margin: 60px 0px 0px 80px;
+    text-align: center;
+}
+.Galochka h5{
+    margin-top: 20px;
+    color: #283c4f;
+    font-size: 30px;
+    font-weight: bold;
+}
+.Galochka p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #283c4f;
+}
+
+.Cup{
+    float: left;
+    height: 120px;
+    width: 280px;
+    margin: 60px 0px 0px 80px;
+    text-align: center;    
+}
+.Cup h5{
+    margin-top: 20px;
+    color: #283c4f;
+    font-size: 30px;
+    font-weight: bold;
+}
+.Cup p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #283c4f;
+}
+
+.section5{
+    width: 100%;
+    height: 637px;
+    background: url(../img/Cherta.png) 50% 28%  no-repeat,
+    url(../img/FonMan.png) 50% 50%  no-repeat,
+    url(../img/FonOtzyvy.png) 50% 50%  no-repeat;
+}
+
+.section5 h2{
+    padding-top: 106px;
+    padding-bottom: 35px;
+    font-size: 36px;
+    color: #2a3e51;
+    font-weight: bold;
+    text-align: center;
+}
+.section5 h5{
+    width: 690px;
+    margin: 230px 0px 0px 615px;
+    text-align: center;
+    color: #2a3e51;
+}
+.section5 p{
+    padding-top: 40px;
+    color: #2a3e51;
+}
+.Rad{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.section6{
+    width:100%;
+    height: 808px;
+    background: url(../img/Cherta.png) 50% 23%  no-repeat,
+    url(../img/FonContacts.jpg) 50% 50%  no-repeat;
+}
+.section6 h2{
+    padding-top: 105px;
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.section6 h4{
+    text-align: center;
+    color: #fff;
+    padding-top: 70px;
+} 
+
+.menu1{   
+    margin: 50px 0px 0px 576px;
+}
+.Geo{
+    float: left;
+    text-align: center;
+    width: 250px;
+}
+.Geo h5{
+    line-height: 20px;
+    margin-top:12px;
+    color: #fff;
+    font-size: 16px;
+}
+.Konvert{
+    float: left;
+    text-align: center;
+    width: 250px;
+}
+.Konvert h5{
+    margin-top:12px;
+    color: #fff;
+    font-size: 16px;
+}
+.Tel{
+    float: left;
+    text-align: center;
+    width: 250px;
+}
+.Tel h5{
+    margin-top:12px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.section6 h3{
+    font-size: 20px;
+    margin-top:155px;
+    text-align: center;
+    color: #fff;
+}
+
+.Message{
+    margin-top:0px;
+    text-align: center;
+}
+.Message input{
+    margin:45px 15px 0px 15px;
+    height: 34px;
+    width: 350px;
+    background: #d0d6dd;
+    font-size:13px;
+    padding: 0px 15px;
+}
+.Message textarea{
+    width: 733px;
+    height: 94px;
+    padding: 10px 15px;
+    margin-top:15px;
+    background: #d0d6dd;
+    outline: none;
+    border: none;
+    font-size: 13px;
+}
+.inpuut input{
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    border: 2px solid #fff;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size:15px;
+}
+.section7{
+    width:100%;
+    height: 350px;
+    background: url(../img/Here.png) 47% 50%  no-repeat,
+    url(../img/Karta.jpg) 50% 50%  no-repeat;
+}
+.section7 h4{
+    margin: 0px 0px 0px 870px;
+    padding-top: 163px;
+    font-weight: bold;
+}
+
+footer{
+    width:100%;
+    height:90px;
+    background: #2a3e51;
+}
+.footer{
+    line-height: 90px;
+    text-align: center;
+    color:#fff;
 }
