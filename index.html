@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <div class='loader'></div>
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Это моя первая страница...">
@@ -9,37 +9,44 @@
     <title>Лёха - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
+  
   <header>
     <nav>
       <div class="logo">Андрей Браун</div> 
-        <div class="menu"><ul>
-          <li>Обо мне</li>
-          <li>Услуги</li>
-          <li>Кейсы</li>
-          <li>Прайс</li>
-          <li>Отзывы</li>
-          <li>Контакты</li>
-        </ul></div>
+      <div class="menu">
+          <ul>
+          <li><a href="#">Обо мне</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Кейсы</a></li>
+          <li><a href="#">Прайс</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+          </ul></div>
     </nav>
   </header>
   
-  <div class="main"><div class="title__container">
+  <main>
+  <section class="main"><div class="title__container">
     <h1>Привет <br> Я Андрей Браун</h1>
     <h4>Фулл стек веб-разработчик</h4>
-    <input type="submit" value="Обо мне">
-    <input type="submit" value="Мои работы"></div>
-  </div>
-  
+    <input type="button" value="Обо мне">
+    <input type="button" value="Мои работы"></div>
+  </section>
+  </main>
   <div class="section1"><div class="title1">
     <h2>ОБО МНЕ</h2>
-      <h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p>
-      <br>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p></h5>
-      <input type="submit" value="Скачать резюме">
+    <h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p></h5>
+    <input type="button" value="Скачать резюме">
   </div></div>
       
 
@@ -81,7 +88,7 @@
     <h3>WEBSITE:<h5><p>http://www.somedomain.com</p></h5></h3></div>
     <div class="Fon3text2">
     <h3>Название проекта</h3><h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.</p></h5>
-    <input type="submit" value="VISIT LIVE SITE">
+    <input type="button" value="VISIT LIVE SITE">
     </div>
     <h2>Расчет стоимости</h2>
         <div class="TypeSite"><h2>ТИП САЙТА</h2>
@@ -105,7 +112,8 @@
           </div></div>
   </div>
 
-  <div class="section4"><h2>НЕМНОГО СТАТИСТИКИ</h2>
+  <div class="section4"><div class="Stats"><h2>НЕМНОГО СТАТИСТИКИ</h2>
+    <img src="img/Cherta.png" alt=""></div>
     <div class="menu"><ul>
       <div class="Smile">
           <img src="img/Smile.png" >
@@ -155,7 +163,7 @@
         <input type="text" name="/text_input" value="" placeholder="Имя">
         <input type="text" name="/text_input" value="" placeholder="Email">
         <p><textarea name="name1" id="1" cols="48" rows="5" placeholder="Сообщение"></textarea></p>
-        <div class="inpuut"><p><input type="submit" value="Отправить"></p></div></div></div>
+        <div class="inpuut"><p><input type="button" value="Отправить"></p></div></div></div>
         <div class="section7">
             <h4>I'M HERE</h4>
         </div>

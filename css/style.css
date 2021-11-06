@@ -1,17 +1,65 @@
 body{
     font-family: Arial, sans-serif;
 }
+
+
+/*Это всё для Лоадера*/
+.loader {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(#f07b00, transparent);
+
+  animation: rotating 1s linear infinite;
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  background: white;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(360deg);
+        
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+/*Выше всё для лоадера*/
+
+
+
+
+
 nav{
     width: 100%;
     height: 60px;
     background: #2a3e51;
+    position:fixed;
+    z-index:100;
 }
 .logo{
     color: white;
     font-size: 28px;
     line-height: 60px;
     padding-left: 390px;
-    float: left
+    float: left;
+    -webkit-animation:comming 1s ease;
+    -o-animation:comming 1s ease;
+    animation:comming 1s ease;
+}
+main{
+    width: 100%;
+    height: 100%;
 }
 .menu{
     float: left;
@@ -24,10 +72,15 @@ nav{
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    font-weight: bold;
+    -webkit-animation:topshift 0.5s ease forwards;
+    -o-animation:topshift 0.5s ease forwards;
+    animation:topshift 0.5s ease forwards;
+    opacity: 0; 
 }
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
 }
 .title__container{
@@ -35,6 +88,13 @@ nav{
     margin: 432px 0px 0px 404px;
     color: #2a3e51;
     text-align: center;
+    -webkit-animation:titlemove 1s ease;
+    -o-animation:titlemove 1s ease;
+    animation:titlemove 1s ease;           
+   
+    -webkit-animation-delay:titlemove 1s;
+    -o-animation-delay:titlemove 1s;
+    animation-delay:titlemove 1s;
 }
 .title__container h1{
     font-size: 60px;
@@ -55,12 +115,87 @@ nav{
     font-size:13px;
     padding: 0px 16px;
     margin: 50px 20px 0px 14px;
+
+    transition: all 0.2s;
+    transform: scale(1);
 }
+.title__container input:hover{
+    background: #2a3e51;
+    color:white;
+}
+.title__container input:active{
+    transform: scale(1.1);
+}
+
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display:inline-block;
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color:#f09638;
+}
+.menu li a:active{
+    transform: scale(1.1);
+}
+.menu li:nth-child(2){
+    animation-delay:0.1s;
+}
+.menu li:nth-child(3){
+    animation-delay:0.2s;
+}
+.menu li:nth-child(4){
+    animation-delay:0.3s;
+}
+.menu li:nth-child(5){
+    animation-delay:0.4s;
+}
+.menu li:nth-child(6){
+    animation-delay:0.5s;
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top:-80px;
+    }
+    to{
+        opacity: 1;
+        margin-top:0px;
+    }
+}
+
+
+
 .section1{
     text-align: center;
     width: 100%;
     height: 720px;
-    background: url(../img/Cherta.png) 50% 10%  no-repeat, url(../img/Boy1.png) 50% 27% no-repeat, url(../img/Fon1.jpg) center/cover no-repeat;
+    background: url(../img/Cherta.png) 50% 10%  no-repeat, 
+    url(../img/Boy1.png) 50% 27% no-repeat, 
+    url(../img/Fon1.jpg) center/cover no-repeat;
 }
 .title1 h2{
     font-size: 36px;
@@ -80,8 +215,20 @@ nav{
     border-radius: 5px;
     padding: 5px 25px;
     margin: 40px 20px 0px 14px;
-    background: url(../img/Icon.png) 5% 50%/auto 70% no-repeat;
+    background: url(../img/Icon.png) 5% 50%/auto 70% no-repeat,
+    url(../img/Icon.png) 95% 50%/auto 70% no-repeat;
     padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.title1 input:hover{
+    background: #2a3e51;
+    color:white;
+}
+.title1 input:active{
+    transform: scale(1.1);
 }
 
 
@@ -241,6 +388,17 @@ nav{
     font-size:18px;
     padding: 0px 16px;
     margin: 30px 0px 120px -430px;
+    display: inline-block;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.Fon3text2 input:hover{
+    background: #f09638;
+    border-color: #f09638;
+    color:white;
+}
+.Fon3text2 input:active{
+    transform: scale(1.1);
 }
 .TypeSite h2{
     font-size: 28px;
@@ -287,28 +445,36 @@ nav{
 }
 .Itog h3{
     font-size: 20px;
-
 }
+
+
 .section4{
     width: 100%;
     height: 500px;
-    background: url(../img/Cherta.png) 50% 32%  no-repeat, 
-    url(../img/Fon2.jpg) 50% 50%  no-repeat;
+    background:url(../img/Fon2.jpg) 50% 50%  no-repeat; 
+    background-attachment: fixed;   
 }
-.section4 h2{
+
+
+.Stats{
     padding-top: 100px;
     padding-bottom: 80px;
+    text-align: center;  
+}
+.Stats h2{
     font-size: 36px;
     color: #2a3e51;
     font-weight: bold;
-    text-align: center;  
+}
+.Stats img{
+    padding-top:23px;
 }
 
 .Smile{
     float: left;
     height: 120px;
     width: 280px;
-    margin: 60px 0px 0px -160px;
+    margin: 40px 0px 0px -160px;
     text-align: center;    
 }
 .Smile h5{
@@ -327,7 +493,7 @@ nav{
     float: left;
     height: 120px;
     width: 280px;
-    margin: 60px 0px 0px 80px;
+    margin: 40px 0px 0px 80px;
     text-align: center;
 }
 .Znak2 h5{
@@ -346,7 +512,7 @@ nav{
     float: left;
     height: 120px;
     width: 280px;
-    margin: 60px 0px 0px 80px;
+    margin: 40px 0px 0px 80px;
     text-align: center;
 }
 .Galochka h5{
@@ -365,7 +531,7 @@ nav{
     float: left;
     height: 120px;
     width: 280px;
-    margin: 60px 0px 0px 80px;
+    margin: 40px 0px 0px 80px;
     text-align: center;    
 }
 .Cup h5{
@@ -437,6 +603,8 @@ nav{
     float: left;
     text-align: center;
     width: 250px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
 .Geo h5{
     line-height: 20px;
@@ -444,26 +612,57 @@ nav{
     color: #fff;
     font-size: 16px;
 }
+.Geo img{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.Geo img:hover{
+    transform: rotate(180deg);
+}
+.Geo:hover{
+    transform: scale(1.2);
+}
 .Konvert{
     float: left;
     text-align: center;
     width: 250px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
 .Konvert h5{
     margin-top:12px;
     color: #fff;
     font-size: 16px;
 }
+.Konvert img:hover{
+    transform: rotate(180deg);
+}
+.Konvert:hover{
+    transform: scale(1.2);
+}
 .Tel{
     float: left;
     text-align: center;
     width: 250px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
 .Tel h5{
     margin-top:12px;
     color: #fff;
     font-size: 16px;
 }
+.Tel img{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.Tel img:hover{
+    transform: rotate(-180deg);
+}
+.Tel:hover{
+    transform: scale(1.2);
+}
+
 
 .section6 h3{
     font-size: 20px;
@@ -503,6 +702,15 @@ nav{
     border-radius: 5px;
     color: #fff;
     font-size:15px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.inpuut input:hover{
+    background: #fff;
+    color:#2a3e51;
+}
+.inpuut input:active{
+    transform: scale(1.1);
 }
 .section7{
     width:100%;
