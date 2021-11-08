@@ -1,5 +1,9 @@
-body{
-    font-family: Arial, sans-serif;
+@font-face {
+    font-family: 'FranklinGot';
+    src: url('../fonts/framd.eot');
+    src: local('☺'), url('../fonts/framd.woff') format('woff'), url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -53,6 +57,7 @@ nav{
     line-height: 60px;
     padding-left: 390px;
     float: left;
+    font-family: 'FranklinGot', sans-serif;
     -webkit-animation:comming 1s ease;
     -o-animation:comming 1s ease;
     animation:comming 1s ease;
@@ -98,7 +103,7 @@ main{
 }
 .title__container h1{
     font-size: 60px;
-    font-weight: bold;
+    font-family: 'FranklinGot', sans-serif;
 }
 .title__container h4{
     margin-top: 40px;
@@ -220,7 +225,6 @@ main{
     padding-left: 40px;
     padding-right: 40px;
     display: inline-block;
-    transition: all 0.2s;
     transform: scale(1);
 }
 .title1 input:hover{
