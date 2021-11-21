@@ -6,10 +6,18 @@
     <meta name="description" content="Это моя первая страница...">
     <meta name="author" content="Alexey">
     <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    user-scalable=yes">
+    
+
     <title>Лёха - Веб-разработчик</title>
 
     <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/my-fonts.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,25 +25,58 @@
   
   <header>
     <nav>
-      <div class="logo">Андрей Браун</div> 
-      <div class="menu">
-          <ul>
-          <li><a href="#">Обо мне</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Кейсы</a></li>
-          <li><a href="#">Прайс</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Контакты</a></li>
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Андрей Браун</div>
+          </div>
+          <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+            <div class="menu"><ul>
+              <li><a href="#">Обо мне</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Кейсы</a></li>
+              <li><a href="#">Прайс</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Контакты</a></li>
           </ul></div>
+          </div>
+          <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+            <div class="dropdown">
+              <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Навигация
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            
+              <li><a class="dropdown-item" href="#">Обо мне</a></li>
+              <li><a class="dropdown-item" href="#">Услуги</a></li>
+              <li><a class="dropdown-item" href="#">Кейсы</a></li>
+              <li><a class="dropdown-item" href="#">Прайс</a></li>
+              <li><a class="dropdown-item" href="#">Отзывы</a></li>
+              <li><a class="dropdown-item" href="#">Контакты</a></li>
+              </ul>
+            </div>    
+          </div>
+        </div>
+      </div>
+       
+      
     </nav>
   </header>
   
   <main>
-  <section class="main"><div class="title__container">
-    <h1>Привет <br> Я Андрей Браун</h1>
-    <h4><i class="fab fa-css3"></i>Фулл стек веб-разработчик</h4>
-    <input type="button" value="Обо мне">
-    <input type="button" value="Мои работы"></div>
+  <section class="main">
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-lg-6 mt-5 pt-5"><div class="title__container mt-5">
+          <h1>Привет <br> Я Андрей Браун</h1>
+          <h4><i class="icon-uncorn"></i>Фулл стек веб-разработчик</h4>
+          <input type="button" value="Обо мне">
+          <input type="button" value="Мои работы"></div>
+        </div>
+      </div>
+    </div>
+
+  
   </section>
   </main>
   <div class="section1"><div class="title1">
@@ -76,19 +117,20 @@
         </div>
   </div></div>
 
-  <div class="section3"><h2>КЕЙСЫ</h2>
+  <div class="section3"><div class="Cases"><h2>КЕЙСЫ</h2></div>
     <div class="text"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dius sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</h5>
     </div>
     <div class="Fon3">
     <img src="img/Fon3.jpg" alt=""></div>
     <div class="Fon3text1">
     <h3>CLIENT:</h3><h5><p>Текст Веб-дизайна</p></h5>
-    <h3>WEBSITE:<h5><p>http://www.somedomain.com</p></h5></h3></div>
-    <div class="Fon3text2">
-    <h3>Название проекта</h3><h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.</p></h5>
+    <h3>WEBSITE:<h5><p>http://www.somedomain.com</p></h5></h3>
     <input type="button" value="VISIT LIVE SITE">
     </div>
-    <h2>Расчет стоимости</h2>
+    <div class="Fon3text2">
+    <h3>Название проекта</h3><h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.</p></h5>
+    </div>
+    <div class="Payment"><h2>Расчет стоимости</h2></div>
         <div class="TypeSite"><h2>ТИП САЙТА</h2>
         <select name="Type" id="">
           <option value="Opt1"></option>
@@ -112,7 +154,7 @@
 
   <div class="section4"><div class="Stats"><h2>НЕМНОГО СТАТИСТИКИ</h2>
     <img src="img/Cherta.png" alt=""></div>
-    <div class="menu"><ul>
+    <div class="Option2">
       <div class="Smile">
           <img src="img/Smile.png" >
           <h5><b>120</b><p>СЧАСТЛИВЫХ КЛИЕНТОВ</p></h5>
@@ -129,7 +171,7 @@
           <img src="img/Cup.png" >
           <h5><b>23</b><p>НАГРАД ПОЛУЧЕНО</p></h5>
       </div>
-      </div>
+    </div>
 
   </div></div>
 
@@ -145,7 +187,7 @@
 
   <div class="section6"><h2>МОИ КОНТАКТЫ</h2>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diamcoccodo</h4>
-        <div class="menu1"><ul>
+        <div class="menu1">
             <div class="Geo">
                 <img src="img/Geo.png" >
                 <h5>Санкт-Петербург<p>Невский проспект 11</p><h5></div>
@@ -161,10 +203,13 @@
         <input type="text" name="/text_input" value="" placeholder="Имя">
         <input type="text" name="/text_input" value="" placeholder="Email">
         <p><textarea name="name1" id="1" cols="48" rows="5" placeholder="Сообщение"></textarea></p>
-        <div class="inpuut"><p><input type="button" value="Отправить"></p></div></div></div>
+        <div class="inpuut"><input type="button" value="Отправить"></div></div></div>
         <div class="section7">
             <h4>I'M HERE</h4>
         </div>
   <footer><h5 class="footer">Copyright © 2021 Андрей Браун. Design by Web</h5></footer>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

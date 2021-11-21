@@ -1,3 +1,6 @@
-.box{
-	
+.container{
+    width: 100%;
+    height: 800px;
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, 
+    url(../img/bg.jpg) center/cover no-repeat;
 }
