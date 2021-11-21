@@ -40,10 +40,12 @@
 }
 /*Выше всё для лоадера*/
 
-
-
-
-
+/*
+html, body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии 
+    overflow-x: hidden;
+}
+*/
 nav{
     width: 100%;
     height: 60px;
@@ -55,7 +57,7 @@ nav{
     color: white;
     font-size: 28px;
     line-height: 60px;
-    padding-left: 390px;
+    
     float: left;
     font-family: 'FranklinGot', sans-serif;
     -webkit-animation:comming 1s ease;
@@ -65,17 +67,21 @@ nav{
 main{
     width: 100%;
     height: 100%;
+
+}
+.white-btn:visited{
+    color:white;
 }
 .menu{
     float: left;
-    padding-left: 432px;
+    
 }
 .menu li{
     float: left;
     line-height: 60px;
     color: white;
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
     -webkit-animation:topshift 0.5s ease forwards;
@@ -83,27 +89,62 @@ main{
     animation:topshift 0.5s ease forwards;
     opacity: 0; 
 }
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display:inline-block;
+    text-decoration: none;
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color:#f09638;
+}
+.menu li a:active{
+    transform: scale(1.1);
+}
+.menu li:nth-child(2){
+    animation-delay:0.1s;
+}
+.menu li:nth-child(3){
+    animation-delay:0.2s;
+}
+.menu li:nth-child(4){
+    animation-delay:0.3s;
+}
+.menu li:nth-child(5){
+    animation-delay:0.4s;
+}
+.menu li:nth-child(6){
+    animation-delay:0.5s;
+}
+
 .main{
     width: 100%;
     height: 100%;
-    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, 
+    url(../img/bg.jpg) center/cover no-repeat;
 }
 .title__container{
-    float: left;
-    margin: 432px 0px 0px 404px;
+    float: left; 
     color: #2a3e51;
     text-align: center;
+    width: 100%;
+    /*opacity: 0;
     -webkit-animation:titlemove 1s ease;
     -o-animation:titlemove 1s ease;
     animation:titlemove 1s ease;           
    
     -webkit-animation-delay:titlemove 1s;
     -o-animation-delay:titlemove 1s;
-    animation-delay:titlemove 1s;
+    animation-delay:titlemove 1s;*/
 }
 .title__container h1{
-    font-size: 60px;
-    font-family: 'FranklinGot', sans-serif;
+    font-size: 72px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
 }
 .title__container h4{
     margin-top: 40px;
@@ -132,36 +173,7 @@ main{
     transform: scale(1.1);
 }
 
-.menu li a{
-    transition: all 0.1s;
-    color: white;
-    transform: scale(1);
-    display:inline-block;
-}
-.menu li a:visited{
-    color: white;
-}
-.menu li a:hover{
-    color:#f09638;
-}
-.menu li a:active{
-    transform: scale(1.1);
-}
-.menu li:nth-child(2){
-    animation-delay:0.1s;
-}
-.menu li:nth-child(3){
-    animation-delay:0.2s;
-}
-.menu li:nth-child(4){
-    animation-delay:0.3s;
-}
-.menu li:nth-child(5){
-    animation-delay:0.4s;
-}
-.menu li:nth-child(6){
-    animation-delay:0.5s;
-}
+
 
 @keyframes comming{
     from{
@@ -191,7 +203,6 @@ main{
         margin-top:0px;
     }
 }
-
 
 
 .section1{
@@ -251,18 +262,20 @@ main{
 }
 .title2 img{
     height: 40px;
-
 }
+
 .Option{
-    margin: 112px 0px 0px 0px;
+    margin: 70px 0px 0px 0px;
     text-align: center;
+    display:flex;
+    justify-content: space-evenly;
 }
 
 .Nout{
     float: left;
     height: 120px;
     width: 200px;
-    margin: 60px 0px 0px 300px;
+    margin: 60px 0px 0px 0%;
     text-align: center;    
 }
 .Nout h5{
@@ -281,7 +294,7 @@ main{
     float: left;
     height: 120px;
     width: 200px;
-    margin: 60px 0px 0px 160px;
+    margin: 60px 0px 0px 0%;
     text-align: center;
 }
 .Znak h5{
@@ -300,7 +313,7 @@ main{
     float: left;
     height: 120px;
     width: 200px;
-    margin: 60px 0px 0px 160px;
+    margin: 60px 0px 0px 0%;
     text-align: center;
 }
 .Rocket h5{
@@ -319,7 +332,7 @@ main{
     float: left;
     height: 120px;
     width: 200px;
-    margin: 60px 0px 0px 160px;
+    margin: 60px 0px 0px 0%;
     text-align: center;    
 }
 .G-n h5{
@@ -336,12 +349,12 @@ main{
 
 .section3{
     width: 100%;
-    height: 2006px;
-    background: url(../img/Cherta.png) 50% 9%  no-repeat;
+    height: 2070px;
+    background: url(../img/Cherta.png) 50% 8%  no-repeat;
 }
 .section3 h2{
     padding-top: 110px;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     font-size: 36px;
     color: #2a3e51;
     font-weight: bold;
@@ -350,10 +363,14 @@ main{
 .text{
     font-size: 20px;
     color: #76828e;
-    margin: 0px 400px 50px 400px;
+    margin: 0px 30px 0px 30px;
+    text-align: center;
 }
 .Fon3{
     text-align: center;
+}
+.Fon3 img{
+    max-width: 100%
 }
 .section3 h3{
     font-size: 28px;
@@ -367,21 +384,11 @@ main{
 }
 
 .Fon3text1{
-    margin: 0px 0px 0px 370px;
+    margin: 0px 0px 0px 10%;
     float: left;   
     color: #2a3e51;
 }
-.Fon3text2{
-    padding-left: 800px;
-    padding-right: 370px;
-    color: #2a3e51;
-}
-.Fon3text2 p{
-    line-height: 20px;
-    color: #2a3e51;
-
-}
-.Fon3text2 input{
+.Fon3text1 input{
     height: 44px;
     width: 200px;
     text-align: center;
@@ -391,71 +398,96 @@ main{
     color: #ffffff;
     font-size:18px;
     padding: 0px 16px;
-    margin: 30px 0px 120px -430px;
+    margin: 30px 0px 10px 0px;
     display: inline-block;
     transition: all 0.2s;
     transform: scale(1);
 }
-.Fon3text2 input:hover{
+.Fon3text1 input:hover{
     background: #f09638;
     border-color: #f09638;
     color:white;
 }
-.Fon3text2 input:active{
+.Fon3text1 input:active{
     transform: scale(1.1);
 }
+
+.Fon3text2{
+    padding-left: 800px;
+    padding-right: 350px;
+    color: #2a3e51;
+}
+.Fon3text2 p{
+    line-height: 20px;
+    color: #2a3e51;
+}
+
+.Payment h2{
+    padding-top: 130px;
+    padding-bottom: 0px;
+    font-size: 36px;
+    color: #2a3e51;
+    font-weight: bold;
+    text-align: center;  
+}
+
 .TypeSite h2{
+    text-align: start;
     font-size: 28px;
-    margin: -150px 0px -70px -740px;
+    margin: 0px 0px 0px 10%;
 }
 .TypeSite select{
-    width: 900px;
+    width: 80%;
     height: 54px;
     text-align: center;
     border: 2px solid #eeeeee;
     background: #eeeeee;
     padding: 0px 20px;
-    margin: 0px 0px -100px 500px;
+    margin: 10px 10% 0px 10%;
 }
 .DesignSite h2{
+    text-align: start;
     font-size: 28px;
-    margin: 0px 0px -70px -770px;
+    margin: 0px 0px 0px 10%;
 }
 .DesignSite select{
-    width: 900px;
+    width: 80%;
     height: 54px;
     text-align: center;
     border: 2px solid #eeeeee;
     background: #eeeeee;
     padding: 0px 20px;
-    margin: 0px 0px -100px 500px;
+    margin: 10px 10% 0px 10%;
 }
 .Adapt h2{
+    text-align: start;
     font-size: 28px;
-    margin: 0px 0px -70px -660px;
+    margin: 0px 0px 0px 10%;
 }
 .Adapt select{
-    width: 900px;
+    width: 80%;
     height: 54px;
     text-align: center;
     border: 2px solid #eeeeee;
     background: #eeeeee;
     padding: 0px 20px;
-    margin: 0px 0px -100px 500px;
+    margin: 10px 10% 0px 10%;
 }
+
 .Itog{
-    margin: 50px 0px 60px 500px;
-    
+    margin: 50px 10% 0px 10%;  
+}
+.Itog img{
+    margin: 0px 50% 0px 0px;
 }
 .Itog h3{
     font-size: 20px;
 }
 
-
 .section4{
     width: 100%;
     height: 500px;
-    background:url(../img/Fon2.jpg) 50% 50%  no-repeat; 
+    background:url(../img/Fon2.jpg) 50% 50% no-repeat; 
     background-attachment: fixed;   
 }
 
@@ -474,11 +506,16 @@ main{
     padding-top:23px;
 }
 
+.Option2{
+    display: flex;
+    justify-content: space-evenly; 
+}
+
 .Smile{
     float: left;
     height: 120px;
     width: 280px;
-    margin: 40px 0px 0px -160px;
+    margin: 0px 0px 0px 0px;
     text-align: center;    
 }
 .Smile h5{
@@ -497,7 +534,7 @@ main{
     float: left;
     height: 120px;
     width: 280px;
-    margin: 40px 0px 0px 80px;
+    margin: 0px 0px 0px 0px;
     text-align: center;
 }
 .Znak2 h5{
@@ -516,7 +553,7 @@ main{
     float: left;
     height: 120px;
     width: 280px;
-    margin: 40px 0px 0px 80px;
+    margin: 0px 0px 0px 0px;
     text-align: center;
 }
 .Galochka h5{
@@ -535,7 +572,7 @@ main{
     float: left;
     height: 120px;
     width: 280px;
-    margin: 40px 0px 0px 80px;
+    margin: 0px 0px 0px 0px;
     text-align: center;    
 }
 .Cup h5{
@@ -567,8 +604,8 @@ main{
     text-align: center;
 }
 .section5 h5{
-    width: 690px;
-    margin: 230px 0px 0px 615px;
+    width: 70%;
+    margin: 230px 15% 0px 15%;
     text-align: center;
     color: #2a3e51;
 }
@@ -600,8 +637,11 @@ main{
     padding-top: 70px;
 } 
 
-.menu1{   
-    margin: 50px 0px 0px 576px;
+.menu1{ 
+    width:60%;
+    margin:30px 20% 0px 20%;  
+    display: flex;
+    justify-content: space-evenly; 
 }
 .Geo{
     float: left;
@@ -670,7 +710,7 @@ main{
 
 .section6 h3{
     font-size: 20px;
-    margin-top:155px;
+    margin-top:85px;
     text-align: center;
     color: #fff;
 }
@@ -680,7 +720,7 @@ main{
     text-align: center;
 }
 .Message input{
-    margin:45px 15px 0px 15px;
+    margin:25px 15px 0px 15px;
     height: 34px;
     width: 350px;
     background: #d0d6dd;
@@ -737,4 +777,484 @@ footer{
     line-height: 90px;
     text-align: center;
     color:#fff;
+}
+.icon-uncorn{
+    font-size: 40px;
+}
+@media(max-width: 991px){
+    .title__container, .title__container h4, .title__container input{
+        color:white;
+        position: relative;
+        z-index:3;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        position:absolute;
+        background:rgba(0,0,0,0.4);
+    }
+}
+@media(max-width: 3000px){
+    .inpuut{
+        margin-top:-30px;
+    }
+    .section7 h4{
+        margin:0px 0px 0px 40%;
+    }
+}
+@media(max-width: 1470px){
+    .title1 h5{
+        margin: 340px 5% 0px 5%;
+        text-align: center;
+    }
+    .title1 br{
+        display: none;
+    }  
+}
+@media(max-width: 1440px){
+    .Fon3text2{
+        padding-left: 400px;
+        padding-right: 80px;
+    }
+    .Itog img{
+        display: none;
+    }
+    .title1 h5{
+        margin: 320px 20px 0px 20px;
+        text-align: center;
+    }
+    .title1 input{
+        margin: 40px 0px 0px 0px;
+    }
+    .Payment h2{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width:900px){
+    .menu1{ 
+        width:96%;
+        margin:20px 2% 0px 2%;  
+        display:flex;
+        flex-wrap:wrap;
+    }
+    
+    .section6{
+        background: url(../img/Cherta.png) 50% 15%  no-repeat,
+        url(../img/FonContacts.jpg) 50% 50%  no-repeat;
+    }
+    .section6 h2{
+        padding-top: 45px;
+    }
+    .section6 h3{
+        margin-top:20px;
+        text-align: center;
+        color: #fff;
+    }
+    .Message{
+        margin-top:0px;
+        text-align: center;
+    }
+    .Message input{
+        margin:15px 15% 0px 15%;
+        height: 34px;
+        width: 70%;
+        padding: 0px 15px;
+    }
+    .Message textarea{
+        width: 70%;
+        height: 94px;
+        padding: 10px 15px;
+        margin:15px 15% 0px 15%;
+    }
+    .inpuut input{
+        margin-top:57px;
+        height: 40px;
+        width: 120px;
+        text-align: center;
+        border: 2px solid #fff;
+        background: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size:15px;
+    }
+}
+@media(max-width: 800px){
+    .Fon3text1{
+        float: none;
+    }
+    .Fon3text2{
+        padding-top: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .section6 h4{
+        text-align: center;
+        padding-top: 40px;
+    } 
+
+    
+}
+@media(max-width: 740px){
+    .Option{
+        text-align: center;
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .Nout{
+        float: left;
+        height: 120px;
+        width: 280px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;    
+    }
+    .Nout h5{
+        margin-top: 10px;
+        color: #eb7800;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .Nout p{
+        margin-top: 10px;
+        font-size: 16px;
+        color: #76828e;
+    }
+
+    .Znak{
+        float: left;
+        height: 120px;
+        width: 280px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .Znak h5{
+        margin-top: 10px;
+        color: #eb7800;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .Znak p{
+        margin-top: 10px;
+        font-size: 16px;
+        color: #76828e;
+    }
+
+    .Rocket{
+        float: left;
+        height: 120px;
+        width: 280px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .Rocket h5{
+        margin-top: 10px;
+        color: #eb7800;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .Rocket p{
+        margin-top: 10px;
+        font-size: 16px;
+        color: #76828e;
+    }
+
+    .G-n{
+        float: left;
+        height: 120px;
+        width: 280px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;    
+    }
+    .G-n h5{
+        margin-top: 10px;
+        color: #eb7800;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .G-n p{
+        margin-top: 10px;
+        font-size: 16px;
+        color: #76828e;
+    }
+
+    .section5{
+        background: url(../img/Cherta.png) 50% 20%  no-repeat,
+        url(../img/FonMan.png) 50% 30%  no-repeat,
+        url(../img/FonOtzyvy.png) 50% 50%  no-repeat;
+    }
+    .section5 h2{
+        padding-top: 60px;
+        padding-bottom: 15px;
+    }
+    .section5 h5{
+        width: 80%;
+        margin: 220px 10% 0px 10%;
+        text-align: center;
+        color: #2a3e51;
+    }
+    .Rad{
+        padding-top: 40px;
+        text-align: center;
+    }
+}
+@media(max-width: 600px){
+    .Option{
+        margin: 50px 0px 0px 0px;
+        text-align: center;
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .Nout{  
+        width: 220px;
+        margin: 0px 0px 0px 0px;       
+    }
+    .Nout h5{
+        margin-top: 10px;        
+    }
+    .Nout p{
+        margin-top: 10px;   
+    }
+
+    .Znak{       
+        width: 220px;
+        margin: 0px 0px 0px 0px;    
+    }
+    .Znak h5{
+        margin-top: 10px;      
+    }
+    .Znak p{
+        margin-top: 10px;        
+    }
+
+    .Rocket{   
+        width: 220px;
+        margin: 0px 0px 0px 0px;        
+    }
+    .Rocket h5{
+        margin-top: 10px;        
+    }
+    .Rocket p{
+        margin-top: 10px;    
+    }
+
+    .G-n{       
+        width: 220px;
+        margin: 0px 0px 0px 0px;           
+    }
+    .G-n h5{
+        margin-top: 10px;   
+    }
+    .G-n p{
+        margin-top: 10px;     
+    }   
+
+
+}
+
+@media(max-width: 550px){
+    .title1 input{
+        margin: 10px 0px 0px 0px;
+    }
+    .section3{
+        background: url(../img/Cherta.png) 50% 9%  no-repeat;;
+    }
+}
+@media(max-width: 470px){
+    .title1 h2{
+        margin-top: 30px;
+    }
+    .section1{
+        height: 840px;
+        background: url(../img/Cherta.png) 50% 7%  no-repeat, 
+        url(../img/Boy1.png) 50% 20% no-repeat;
+    }
+    .Fon3 img{
+        display:none;
+    }
+
+    .section5{
+        background: url(../img/Cherta.png) 50% 20%  no-repeat,
+        url(../img/FonMan.png) 50% 30%  no-repeat,
+        url(../img/FonOtzyvy.png) 50% 50%  no-repeat;
+    }
+    .section5 h2{
+        padding-top: 60px;
+        padding-bottom: 15px;
+    }
+    .section5 h5{
+        width: 80%;
+        margin: 200px 10% 0px 10%;
+        text-align: center;
+        color: #2a3e51;
+    }
+    .section5 p{
+        padding-top: 40px;
+        color: #2a3e51;
+    }
+    .Rad{
+        padding-top: 25px;
+        text-align: center;
+    }
+    .section3{
+        height: 1770px;
+    }
+}
+
+@media(max-width: 450px){
+    
+    .Option{
+        margin: 50px 0px 0px 0px;
+        text-align: center;
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .Nout{  
+        width: 160px;
+        margin: 0px 0px 0px 0px;       
+    }
+    .Nout h5{
+        margin-top: 10px;        
+    }
+    .Nout p{
+        margin-top: 10px;   
+    }
+
+    .Znak{       
+        width: 160px;
+        margin: 0px 0px 0px 0px;    
+    }
+    .Znak h5{
+        margin-top: 10px;      
+    }
+    .Znak p{
+        margin-top: 10px;        
+    }
+
+    .Rocket{   
+        width: 160px;
+        margin: 0px 0px 0px 0px;        
+    }
+    .Rocket h5{
+        margin-top: 10px;        
+    }
+    .Rocket p{
+        margin-top: 10px;    
+    }
+
+    .G-n{       
+        width: 160px;
+        margin: 0px 0px 0px 0px;           
+    }
+    .G-n h5{
+        margin-top: 10px;   
+    }
+    .G-n p{
+        margin-top: 10px;     
+    }
+
+    .Stats{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;  
+    }
+    .Option2{
+        display: flex;
+        flex-wrap:wrap; 
+    }
+    .Smile{
+        float: left;
+        height: 160px;
+        width: 160px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;    
+    }
+    .Smile h5{
+        margin-top: 10px;
+        color: #283c4f;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .Smile p{
+        margin-top: 10px;
+        font-size: 15px;
+        color: #283c4f;
+    }
+
+    .Znak2{
+        float: left;
+        height: 160px;
+        width: 160px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .Znak2 h5{
+        margin-top: 10px;
+        color: #283c4f;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .Znak2 p{
+        margin-top: 10px;
+        font-size: 15px;
+        color: #283c4f;
+    }
+
+    .Galochka{
+        float: left;
+        height: 160px;
+        width: 160px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .Galochka h5{
+        margin-top: 10px;
+        color: #283c4f;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .Galochka p{
+        margin-top: 10px;
+        font-size: 15px;
+        color: #283c4f;
+    }
+
+    .Cup{
+        float: left;
+        height: 160px;
+        width: 160px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;    
+    }
+    .Cup h5{
+        margin-top: 10px;
+        color: #283c4f;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .Cup p{
+        margin-top: 10px;
+        font-size: 15px;
+        color: #283c4f;
+    }
+}
+@media(max-width: 332px){
+    .logo{
+        font-size: 20px;
+    }
+}
+@media(min-width: 1910px){
+    .Fon3text1{
+        margin: 0px 0px 0px 370px;
+    }
 }
