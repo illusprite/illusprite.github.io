@@ -781,25 +781,7 @@ footer{
 .icon-uncorn{
     font-size: 40px;
 }
-@media(max-width: 991px){
-    .title__container, .title__container h4, .title__container input{
-        color:white;
-        position: relative;
-        z-index:3;
-    }
-    .main{
-        position: relative;
-    }
-    .main::after{
-        content: "";
-        bottom:0;
-        top:0;
-        left:0;
-        right:0;
-        position:absolute;
-        background:rgba(0,0,0,0.4);
-    }
-}
+
 @media(max-width: 3000px){
     .inpuut{
         margin-top:-30px;
@@ -833,11 +815,41 @@ footer{
         margin: 40px 0px 0px 0px;
     }
     .Payment h2{
-        padding-top: 30px;
+        padding-top: 160px;
         padding-bottom: 20px;
     }
 }
-
+@media(max-width: 1030px){
+    .title__container, .title__container h4, .title__container input{
+        color:white;
+        position: relative;
+        z-index:3;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        position:absolute;
+        background:rgba(0,0,0,0.4);
+    }
+    
+}
+@media(max-width: 991px) and (max-height: 700px){
+    .title__container input{
+        margin: 20px 20px 0px 14px;
+    }
+    .title__container h1{
+        font-size: 56px;
+    }
+    .title__container h4{
+        margin-top: 20px;
+    }
+}
 @media(max-width:900px){
     .menu1{ 
         width:96%;
@@ -895,7 +907,10 @@ footer{
         padding-left: 10%;
         padding-right: 10%;
     }
-
+    .Payment h2{
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
     .section6 h4{
         text-align: center;
         padding-top: 40px;
@@ -1246,6 +1261,10 @@ footer{
         margin-top: 10px;
         font-size: 15px;
         color: #283c4f;
+    }
+
+    ъfooter h5{
+        font-size: 14px;
     }
 }
 @media(max-width: 332px){
