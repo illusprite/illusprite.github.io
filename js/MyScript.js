@@ -121,7 +121,8 @@ let inform = {
 }
 console.log(inform);
 console.log(Type$+Design$+Adapt$);
-
+var message = "Работа будет стоить " + (Type$+Design$+Adapt$) + " рублей."
+alert(message);
 
 
 
