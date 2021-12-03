@@ -126,27 +126,27 @@ alert(message);
 */
 //Для анимации цифр num - число на ввод, elem - куда будем записывать результат
 $(document).ready(function(){
-$(window).scroll(()=>{
-	let scrollDistance = $(window).scrollTop();
-
-	$(".section").each((i, el) => {
-		if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
-			$("nav a").each((i, el) => {
-				if($(el).hasClass("active")){
-					$(el).removeClass("active");
-				}	
-			});
-			$('nav li:eq('+ i +')').find('a').addClass('active');
-		}
+	$('a[href^="#"]').click(function(){
+		let valHref = $(this).attr("href");
+		$('html, body').animate({scrollTop: $(valHref).offset().top - 100 + "px"});
 	});
-});
-});
 
-$('a[href="#"]').click(function(){
-	let valHref = $(this).attr("href");
-	$('html, body').animate({scrollTop: $(valHref).offset().top - 120 + "px"});
-});
+	$(window).scroll(()=>{
+		let scrollDistance = $(window).scrollTop();
 
+		$(".1").each((i, el) => {
+			if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
+				$("nav a").each((i, el) => {
+					if($(el).hasClass("active")){
+						$(el).removeClass("active");
+					}	
+				});
+				$('nav li:eq('+ i +')').find('a').addClass('active');
+			}
+		});
+	});
+
+});
 
 window.onload = function(){
     document.querySelector('.loader').style.display = 'none';
