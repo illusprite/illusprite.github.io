@@ -42,7 +42,7 @@
 
 /*
 html, body {
-    /* Убирает прокрутку по горизонтале, для мобильной версии 
+    /* Убирает прокрутку по горизонтали, для мобильной версии 
     overflow-x: hidden;
 }
 */
@@ -439,7 +439,7 @@ main{
 .TypeSite select{
     width: 80%;
     height: 54px;
-    text-align: center;
+    
     border: 2px solid #eeeeee;
     background: #eeeeee;
     padding: 0px 20px;
@@ -453,7 +453,7 @@ main{
 .DesignSite select{
     width: 80%;
     height: 54px;
-    text-align: center;
+    
     border: 2px solid #eeeeee;
     background: #eeeeee;
     padding: 0px 20px;
@@ -467,7 +467,7 @@ main{
 .Adapt select{
     width: 80%;
     height: 54px;
-    text-align: center;
+    
     border: 2px solid #eeeeee;
     background: #eeeeee;
     padding: 0px 20px;
@@ -475,13 +475,25 @@ main{
 }
 
 .Itog{
-    margin: 50px 10% 0px 10%;  
+    margin: 50px 0px 0px 10%;
 }
 .Itog img{
     margin: 0px 50% 0px 0px;
+
 }
 .Itog h3{
     font-size: 20px;
+}
+
+.Itog1{
+    margin-top:-67.5px;
+    margin-left: 100px;
+}
+.Itog1 h3{
+    font-size: 20px;
+    color: #2a3e51;
+    font-weight: bold;
+    margin: 10px 0px 0% 10%;
 }
 
 .section4{
@@ -1263,7 +1275,7 @@ footer{
         color: #283c4f;
     }
 
-    ъfooter h5{
+    footer h5{
         font-size: 14px;
     }
 }
