@@ -1,158 +1,58 @@
 "use strict";
 
-/*Программа ниже не даёт пользователю не ввести одну из нужных нам цифр для ТИП САЙТА*/
-/* 
-let Type = prompt("Какой тип сайта нужен Вам (Введите цифру от 1 до 3)", ["1 - Сайт-визитка, 2 - Промо-сайт, 3 - Интернет-магазин"]);
-do{
-  	if(Type==1){
-		console.log(Type);
-		var Type$=5000;
-		}
-		else if(Type==2){
-			console.log(Type);
-			var Type$=15000;
-		}
-		else if(Type==3){
-			console.log(Type);
-			var Type$=30000;
-		}
-		else{			
-			Type = prompt("ЦИФРУ ГОВОРЮ", ["1 - Сайт-визитка, 2 - Промо-сайт, 3 - Интернет-магазин"]);	
-			if(!isNaN(Type)){
-				console.log(Type);
-			}
-			if(Type==1){
-				
-				var Type$=5000;
-				}
-				else if(Type==2){
-					
-					var Type$=15000;
-				}
-				else if(Type==3){
-					
-					var Type$=30000;
-				}	
-		}
-} while (isNaN(Type));	
-console.log(Type$);
-
-
-/*Программа ниже не даёт пользователю не ввести одну из нужных нам цифр для ДИЗАЙН*/
-/*
-let Design = prompt("Какой дизайн Вы бы хотели видет на сайте? (Введите цифру от 1 до 3)", ["1 - Красный, 2 - Прекрасный, 3 - Отвязный"]);
-do{
-  	if(Design==1){
-		console.log(Design);
-		var Design$=5000;
-		}
-		else if(Design==2){
-			console.log(Design);
-			var Design$=15000;
-		}
-		else if(Design==3){
-			console.log(Design);
-			var Design$=30000;
-		}
-		else{			
-			Design = prompt("Я серьёзно, цифру", ["1 - Красный, 2 - Прекрасный, 3 - Отвязный"]);	
-			if(!isNaN(Design)){
-				console.log(Design);
-			}
-			if(Design==1){
-				
-				var Design$=5000;
-				}
-				else if(Design==2){
-					
-					var Design$=15000;
-				}
-				else if(Design==3){
-					
-					var Design$=30000;
-				}	
-		}
-} while (isNaN(Design));	
-console.log(Design$);
-
-*/
-/*Программа ниже не даёт пользователю не ввести одну из нужных нам цифр для АДАПТИВНОСТЬ*/
-/*
-let Adapt = prompt("Под какие устройства нужно адаптировать сайт (Телефоны, ПК...)?",["1 - все устройства, 2 - компьютеры, 3 - телефоны"]);
-do{
-  	if(Adapt==1){
-		console.log(Adapt);
-		var Adapt$=23000;
-		}
-		else if(Adapt==2){
-			console.log(Adapt);
-			var Adapt$=15000;
-		}
-		else if(Adapt==3){
-			console.log(Adapt);
-			var Adapt$=15000;
-		}
-		else{			
-			Adapt = prompt("Смешно ему...",["1 - все устройства, 2 - компьютеры, 3 - телефоны"]);	
-			if(!isNaN(Adapt)){
-				console.log(Adapt);
-			}
-			if(Adapt==1){
-				
-				var Adapt$=23000;
-				}
-				else if(Adapt==2){
-					
-					var Adapt$=15000;
-				}
-				else if(Adapt==3){
-					
-					var Adapt$=15000;
-				}	
-		}
-} while (isNaN(Adapt));	
-console.log(Adapt$);
-
-
-let inform = {
-	Type: Type,
-	Design: Design,
-	Adapt: Adapt,
-}
-console.log(inform);
-console.log(Type$+Design$+Adapt$);
-var message = "Работа будет стоить " + (Type$+Design$+Adapt$) + " рублей."
-alert(message); 
-*/
-//Для анимации цифр num - число на ввод, elem - куда будем записывать результат
-$(document).ready(function(){
-	$('a[href^="#"]').click(function(){
-		let valHref = $(this).attr("href");
-		$('html, body').animate({scrollTop: $(valHref).offset().top - 100 + "px"});
-	});
-
-	$(window).scroll(()=>{
-		let scrollDistance = $(window).scrollTop();
-
-		$(".1").each((i, el) => {
-			if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
-				$("nav a").each((i, el) => {
-					if($(el).hasClass("active")){
-						$(el).removeClass("active");
-					}	
-				});
-				$('nav li:eq('+ i +')').find('a').addClass('active');
-			}
-		});
-	});
-
-});
-
 window.onload = function(){
     document.querySelector('.loader').style.display = 'none';
+    
+}
+//Прокрутка
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+if(menuLinks.length > 0) {
+	menuLinks.forEach(menuLink => {
+		menuLink.addEventListener("click", onMenuLinkClick);
+	});
+
+	function onMenuLinkClick(e) {
+		const menuLink = e.target;
+		if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector("nav").offsetHeight;
+
+			window.scrollTo({
+				top: gotoBlockValue,
+				behavior: "smooth"
+			});
+			e.preventDefault();
+		}
+	}
 }
 
 
+
+
+//Попытка подсвечивать активное меню
+
+//ПОЧЕМУ НЕ РАБОТАЕТ ААААА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+
+$(window).scroll(()=>{
+	let scrollDistance = $(window).scrollTop();
+
+	$("section").each((i, el) => {
+
+		if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
+			$("nav a").each((i, el) => {
+				if ($(el).hasClass("active")){
+					$(el).removeClass("active");
+				}
+			});
+
+			$('nav li:eq('+ i +')').find('a').addClass('active');
+		}
+	});
+});
+
+
+
+//Для анимации цифр num - число на ввод, elem - куда будем записывать результат
 const time = 300;
 const step = 100;
 
@@ -169,7 +69,6 @@ function outNum(num, elem){
 	},
 		t);
 }
-
 
 
 var TotalPrice = 0;

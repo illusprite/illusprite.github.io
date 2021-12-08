@@ -9,15 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
     user-scalable=yes">
     
-
     <title>Лёха - Веб-разработчик</title>
 
     <link rel="stylesheet" href="css/reset.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/my-fonts.css">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,73 +24,76 @@
     <nav>
       <div class="container">
         <div class="row">
-          <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Андрей Браун</div>
+          <div class="col-xxl-2 col-lg-3 col-7">
+            <div class="logo">Андрей Браун</div>
           </div>
           <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
-            <div class="menu"><ul>
-              <li><a href="#OboMne">Обо мне</a></li>
-              <li><a href="#ChtoYaUmeu">Услуги</a></li>
-              <li><a href="#Case">Кейсы</a></li>
-              <li><a href="#Stata">Прайс</a></li>
-              <li><a href="#Reviews">Отзывы</a></li>
-              <li><a href="#Communications">Контакты</a></li>
-          </ul></div>
+            <div class="menu">
+              <ul>
+                <li><a class="menu__link" data-goto=".page__section_1" href="#OboMne">Обо мне</a></li>
+                <li><a class="menu__link" data-goto=".page__section_2" href="#ChtoYaUmeu">Услуги</a></li>
+                <li><a class="menu__link" data-goto=".page__section_3" href="#Case">Кейсы</a></li>
+                <li><a class="menu__link" data-goto=".page__section_4" href="#Stats">Прайс</a></li>
+                <li><a class="menu__link" data-goto=".page__section_5" href="#Reviews">Отзывы</a></li>
+                <li><a class="menu__link" data-goto=".page__section_6" href="#Communications">Контакты</a></li>
+              </ul></div>
           </div>
+          
           <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
             <div class="dropdown">
-              <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Навигация
-              </a>
-
+              <a class="btn btn-outline-secondary dropdown-toggle white-btn" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Навигация</a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            
-              <li><a class="dropdown-item" href="#OboMne">Обо мне</a></li>
-              <li><a class="dropdown-item" href="#ChtoYaUmeu">Услуги</a></li>
-              <li><a class="dropdown-item" href="#Case">Кейсы</a></li>
-              <li><a class="dropdown-item" href="#Stata">Прайс</a></li>
-              <li><a class="dropdown-item" href="#Reviews">Отзывы</a></li>
-              <li><a class="dropdown-item" href="#Communications">Контакты</a></li>
+                <li><a class="menu__link" data-goto=".page__section_1" href="#OboMne">Обо мне</a></li>
+                <li><a class="menu__link" data-goto=".page__section_2" href="#ChtoYaUmeu">Услуги</a></li>
+                <li><a class="menu__link" data-goto=".page__section_3" href="#Case">Кейсы</a></li>
+                <li><a class="menu__link" data-goto=".page__section_4" href="#Stats">Прайс</a></li>
+                <li><a class="menu__link" data-goto=".page__section_5" href="#Reviews">Отзывы</a></li>
+                <li><a class="menu__link" data-goto=".page__section_6" href="#Communications">Контакты</a></li>
               </ul>
             </div>    
           </div>
         </div>
-      </div>
-       
-      
+      </div>  
     </nav>
   </header>
   
   <main>
-  <section class="main">
-    <div class="container h-100">
-      <div class="row align-items-center h-100">
-        <div class="col-lg-6 mt-5 pt-5"><div class="title__container mt-5">
-          <h1>Привет <br> Я Андрей Браун</h1>
-          <h4><i class="icon-uncorn"></i>Фулл стек веб-разработчик</h4>
-          <input type="button" value="Обо мне">
-          <input type="button" value="Мои работы"></div>
+    <section class="main">
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-lg-6 mt-5 pt-5">
+            <div class="title__container mt-5">
+              <h1>Привет <br> Я Андрей Браун</h1>
+              <h4><i class="icon-uncorn"></i>Фулл стек веб-разработчик</h4>
+              <input type="button" value="Обо мне">
+              <input type="button" value="Мои работы">
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="page__section page__section_1">
+    <div class="section1" id="OboMne">
+      <div class="title1">
+        <h2>ОБО МНЕ</h2>
+        <h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p>
+        <br>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p></h5>
+        <input type="button" value="Скачать резюме">
       </div>
     </div>
 
-  
-  </section>
-  </main>
-
-  <section class="1">
-  <div class="section1" id="OboMne"><div class="title1">
-    <h2>ОБО МНЕ</h2>
-    <h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p>
-    <br>
-    <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p></h5>
-    <input type="button" value="Скачать резюме">
-  </div></div>
   </section>
 
-  <section class="1">
-  <div class="section2" id="ChtoYaUmeu"><div class="title2">
-    <h2>ЧТО Я УМЕЮ</h2></div>
+  <section class="page__section page__section_2">
+    <div class="section2" id="ChtoYaUmeu">
+      <div class="title2">
+        <h2>ЧТО Я УМЕЮ</h2>
+      </div>
       <div class="Option">
         <div class="Nout">
           <img src="img/Nout.png" >
@@ -118,116 +118,131 @@
           <h5>Маркетинг</h5>
           <p>Текст Маркетинга</p>
         </div>
-  </div></div>
+      </div>
+    </div>
   </section>
 
-  <section class="1">
-  <div class="section3" id="Case"><div class="Cases"><h2>КЕЙСЫ</h2></div>
-    <div class="text"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dius sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</h5>
+  <section class="page__section page__section_3">
+    <div class="section3" id="Case"><div class="Cases"><h2>КЕЙСЫ</h2></div>
+      <div class="text"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dius sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</h5></div>
+      <div class="Fon3"><img src="img/Fon3.jpg" alt=""></div>
+      <div class="Fon3text1">
+        <h3>CLIENT:</h3><h5><p>Текст Веб-дизайна</p></h5>
+        <h3>WEBSITE:<h5><p>http://www.somedomain.com</p></h5></h3>
+        <input type="button" value="VISIT LIVE SITE">
+      </div>
+      <div class="Fon3text2">
+        <h3>Название проекта</h3><h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.</p></h5>
+      </div>
     </div>
-    <div class="Fon3">
-    <img src="img/Fon3.jpg" alt=""></div>
-    <div class="Fon3text1">
-    <h3>CLIENT:</h3><h5><p>Текст Веб-дизайна</p></h5>
-    <h3>WEBSITE:<h5><p>http://www.somedomain.com</p></h5></h3>
-    <input type="button" value="VISIT LIVE SITE">
-    </div>
-    <div class="Fon3text2">
-    <h3>Название проекта</h3><h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.</p></h5>
-    </div>
-    <div class="Payment" id="Stata"><h2>Расчет стоимости</h2></div>
+  </section>    
+
+  <section class="page__section page__section_4">
+    <div class="section4">
+      <div class="Payment" id="Stata"><div class="Rasch"><h2>Расчет стоимости</h2></div>
         <div class="TypeSite"><h2>ТИП САЙТА</h2>
-        <select name="Type" id="Type1" onchange="fun1()">
-          <option value="0">Выберете пункт</option>
-          <option value="5000">1 - Сайт-визитка</option>
-          <option value="15000">2 - Промо-сайт</option>
-          <option value="30000">3 - Интернет-магазин</option>
-        </select></div>
+          <select name="Type" id="Type1" onchange="fun1()">
+            <option value="0">Выберете пункт</option>
+            <option value="5000">1 - Сайт-визитка</option>
+            <option value="15000">2 - Промо-сайт</option>
+            <option value="30000">3 - Интернет-магазин</option>
+          </select>
+        </div>
         <div class="DesignSite"><h2>ДИЗАЙН</h2>
-        <select name="Design" id="Design1" onchange="fun2()">
-          <option value="0">Выберете пункт</option>
-          <option value="5000">1 - Красный</option>
-          <option value="15000">2 - Прекрасный</option>
-          <option value="30000">3 - Отвязный</option>
-        </select></div>
+          <select name="Design" id="Design1" onchange="fun2()">
+            <option value="0">Выберете пункт</option>
+            <option value="5000">1 - Красный</option>
+            <option value="15000">2 - Прекрасный</option>
+            <option value="30000">3 - Отвязный</option>
+          </select>
+        </div>
         <div class="Adapt"><h2>АДАПТИВНОСТЬ</h2>
-        <select name="Adaptability" id="Adaptability1" onchange="fun3()">
-          <option value="0">Выберете пункт</option>
-          <option value="23000">1 - все устройства</option>
-          <option value="15000">2 - компьютеры</option>
-          <option value="15000">3 - телефоны</option>
-        </select></div>
-          <div class="Itog"><img src="img/LinePoditog.png" >
+          <select name="Adaptability" id="Adaptability1" onchange="fun3()">
+            <option value="0">Выберете пункт</option>
+            <option value="23000">1 - все устройства</option>
+            <option value="15000">2 - компьютеры</option>
+            <option value="15000">3 - телефоны</option>
+          </select>
+        </div>
+        <div class="Itog"><img src="img/LinePoditog.png" >
             <h3>Сроки</h3>
             <h3>Стоимость</h3>
-          <div class="Itog1">
-            <h3 id="Time1">0 дней.</h3>
-            <h3 id="Price1"><div id="out-1" class="out-num">0</div> рублей.</h3>
-          </div></div>
-  </div>
-  </section>
-
-  <section class="1">
-  <div class="section4"><div class="Stats"><h2>НЕМНОГО СТАТИСТИКИ</h2>
-    <img src="img/Cherta.png" alt=""></div>
-    <div class="Option2">
-      <div class="Smile">
-          <img src="img/Smile.png" >
-          <h5><b>120</b><p>СЧАСТЛИВЫХ КЛИЕНТОВ</p></h5>
-      </div>
-      <div class="Znak2">
-          <img src="img/Znak2.png" >
-          <h5><b>4600</b><p>ЧАСОВ РОБОТЫ</p></h5>
-      </div>
-      <div class="Galochka">
-          <img src="img/Galochka.png" >
-          <h5><b>340</b><p>ПРОЕКТОВ ЗАВЕРШЕНО</p></h5>
-      </div>
-      <div class="Cup">
-          <img src="img/Cup.png" >
-          <h5><b>23</b><p>НАГРАД ПОЛУЧЕНО</p></h5>
+            <div class="Itog1">
+              <h3 id="Time1">0 дней.</h3>
+              <h3 id="Price1"><div id="out-1" class="out-num">0</div> рублей.</h3>
+            </div> 
+        </div>
       </div>
     </div>
 
-  </div></div>
-  </section>
-
-  <section class="1">
-  <div class="section5" id="Reviews">
-        <h2>ОТЗЫВЫ</h2>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at dius sed dapibus leo nec ornare diam.
-        <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p></h5>
-        <div class="Rad">
-            <input type="radio" name="text_input1">
-            <input type="radio" name="text_input1">
-            <input type="radio" name="text_input1"></div>
-  </div>
-  </section>
-
-  <section class="1">
-  <div class="section6" id="Communications"><h2>МОИ КОНТАКТЫ</h2>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diamcoccodo</h4>
-        <div class="menu1">
-            <div class="Geo">
-                <img src="img/Geo.png" >
-                <h5>Санкт-Петербург<p>Невский проспект 11</p><h5></div>
-            <div class="Konvert">
-                <img src="img/Konvert.png" >
-                <h5>info@companyname.com<h5></div>
-            <div class="Tel">
-                <img src="img/Tel.png" >
-                <h5>+7 999 999-99-99<h5></div>
+    <div class="Section4_1"><div class="Stats"><h2>НЕМНОГО СТАТИСТИКИ</h2>
+      <img src="img/Cherta.png" alt=""></div>
+      <div class="Option2">
+        <div class="Smile">
+            <img src="img/Smile.png" >
+            <h5><b>120</b><p>СЧАСТЛИВЫХ КЛИЕНТОВ</p></h5>
         </div>
-        
-        <div class="Message"><h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+        <div class="Znak2">
+            <img src="img/Znak2.png" >
+            <h5><b>4600</b><p>ЧАСОВ РОБОТЫ</p></h5>
+        </div>
+        <div class="Galochka">
+            <img src="img/Galochka.png" >
+            <h5><b>340</b><p>ПРОЕКТОВ ЗАВЕРШЕНО</p></h5>
+        </div>
+        <div class="Cup">
+            <img src="img/Cup.png" >
+            <h5><b>23</b><p>НАГРАД ПОЛУЧЕНО</p></h5>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="page__section page__section_5">
+    <div class="section5" id="Reviews">
+      <h2>ОТЗЫВЫ</h2>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at dius sed dapibus leo nec ornare diam.
+      <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p></h5>
+      <div class="Rad">
+        <input type="radio" name="text_input1">
+        <input type="radio" name="text_input1">
+        <input type="radio" name="text_input1">
+      </div>
+    </div>
+  </section>
+
+  <section class="page__section page__section_6">
+    <div class="section6" id="Communications"><h2>МОИ КОНТАКТЫ</h2>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diamcoccodo</h4>
+      <div class="menu1">
+        <div class="Geo">
+          <img src="img/Geo.png" >
+          <h5>Санкт-Петербург<p>Невский проспект 11</p><h5>
+        </div>
+        <div class="Konvert">
+          <img src="img/Konvert.png" >
+          <h5>info@companyname.com<h5>
+        </div>
+        <div class="Tel">
+          <img src="img/Tel.png" >
+          <h5>+7 999 999-99-99<h5>
+        </div>
+      </div>
+      <div class="Message"><h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
         <input type="text" name="/text_input" value="" placeholder="Имя">
         <input type="text" name="/text_input" value="" placeholder="Email">
         <p><textarea name="name1" id="1" cols="48" rows="5" placeholder="Сообщение"></textarea></p>
-        <div class="inpuut"><input type="button" value="Отправить"></div></div></div>
+        <div class="inpuut"><input type="button" value="Отправить"></div>
+      </div>
+    </div>  
+  </section>
   
-        <div class="section7">
-            <h4>I'M HERE</h4>
-        </div>
+  <div class="Here">
+    <h4>I'M HERE</h4>
+  </div>
+
+
   <footer><h5 class="footer">Copyright © 2021 Андрей Браун. Design by Web</h5></footer>
 
   <script src="js/jquery-3.6.0.min.js"></script>
@@ -236,3 +251,4 @@
 
 </body>
 </html>
+
