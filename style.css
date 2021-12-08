@@ -67,7 +67,6 @@ nav{
 main{
     width: 100%;
     height: 100%;
-
 }
 .white-btn:visited{
     color:white;
@@ -209,15 +208,15 @@ main{
     text-align: center;
     width: 100%;
     height: 720px;
-    background: url(../img/Cherta.png) 50% 10%  no-repeat, 
-    url(../img/Boy1.png) 50% 27% no-repeat, 
+    background: url(../img/Cherta.png) 50% 12%  no-repeat, 
+    url(../img/Boy1.png) 50% 29% no-repeat, 
     url(../img/Fon1.jpg) center/cover no-repeat;
 }
 .title1 h2{
     font-size: 36px;
     color: #2a3e51;
     font-weight: bold;
-    margin-top: 110px;
+    padding-top: 25px;
 }
 .title1 h5{
     font-size: 20px;
@@ -349,12 +348,12 @@ main{
 
 .section3{
     width: 100%;
-    height: 2070px;
-    background: url(../img/Cherta.png) 50% 8%  no-repeat;
+    height: 1100px;
+    background: url(../img/Cherta.png) 50% 11%  no-repeat;
 }
 .section3 h2{
-    padding-top: 110px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     font-size: 36px;
     color: #2a3e51;
     font-weight: bold;
@@ -422,8 +421,13 @@ main{
     color: #2a3e51;
 }
 
+
+.section4{
+    width:100%;
+    height: 800px;
+}
 .Payment h2{
-    padding-top: 130px;
+    padding-top: 50px;
     padding-bottom: 0px;
     font-size: 36px;
     color: #2a3e51;
@@ -475,9 +479,11 @@ main{
 }
 
 .Itog{
+    max-width: 100%;
     margin: 50px 0px 0px 10%;
 }
 .Itog img{
+    width: 50%;
     margin: 0px 50% 0px 0px;
 
 }
@@ -496,7 +502,7 @@ main{
     margin: 10px 0px 0% 10%;
 }
 
-.section4{
+.Section4_1 {
     width: 100%;
     height: 500px;
     background:url(../img/Fon2.jpg) 50% 50% no-repeat; 
@@ -602,13 +608,13 @@ main{
 .section5{
     width: 100%;
     height: 637px;
-    background: url(../img/Cherta.png) 50% 28%  no-repeat,
-    url(../img/FonMan.png) 50% 50%  no-repeat,
+    background: url(../img/Cherta.png) 50% 24%  no-repeat,
+    url(../img/FonMan.png) 50% 40%  no-repeat,
     url(../img/FonOtzyvy.png) 50% 50%  no-repeat;
 }
 
 .section5 h2{
-    padding-top: 106px;
+    padding-top: 70px;
     padding-bottom: 35px;
     font-size: 36px;
     color: #2a3e51;
@@ -633,21 +639,27 @@ main{
 .section6{
     width:100%;
     height: 808px;
-    background: url(../img/Cherta.png) 50% 23%  no-repeat,
+    background: url(../img/Cherta.png) 50% 17%  no-repeat,
     url(../img/FonContacts.jpg) 50% 50%  no-repeat;
 }
 .section6 h2{
-    padding-top: 105px;
+    padding-top: 70px;
     font-size: 36px;
     color: #fff;
     font-weight: bold;
     text-align: center;
 }
+.section6 h3{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
 .section6 h4{
     text-align: center;
     color: #fff;
-    padding-top: 70px;
+    padding-top: 50px;
 } 
+
 
 .menu1{ 
     width:60%;
@@ -719,16 +731,8 @@ main{
     transform: scale(1.2);
 }
 
-
-.section6 h3{
-    font-size: 20px;
-    margin-top:85px;
-    text-align: center;
-    color: #fff;
-}
-
 .Message{
-    margin-top:0px;
+    padding-top:50px;
     text-align: center;
 }
 .Message input{
@@ -749,6 +753,9 @@ main{
     border: none;
     font-size: 13px;
 }
+.inpuut{
+    padding-top: 30px;
+}
 .inpuut input{
     height: 40px;
     width: 120px;
@@ -768,13 +775,13 @@ main{
 .inpuut input:active{
     transform: scale(1.1);
 }
-.section7{
+.Here{
     width:100%;
     height: 350px;
     background: url(../img/Here.png) 47% 50%  no-repeat,
     url(../img/Karta.jpg) 50% 50%  no-repeat;
 }
-.section7 h4{
+.Here h4{
     margin: 0px 0px 0px 870px;
     padding-top: 163px;
     font-weight: bold;
@@ -798,7 +805,7 @@ footer{
     .inpuut{
         margin-top:-30px;
     }
-    .section7 h4{
+    .Here h4{
         margin:0px 0px 0px 40%;
     }
 }
@@ -816,6 +823,9 @@ footer{
         padding-left: 400px;
         padding-right: 80px;
     }
+    .Fon3text2 p{
+        padding-bottom: 50px;
+    }
     .Itog img{
         display: none;
     }
@@ -826,9 +836,16 @@ footer{
     .title1 input{
         margin: 40px 0px 0px 0px;
     }
+    .section4{
+        height: 800px;
+    }
     .Payment h2{
-        padding-top: 160px;
+        padding-top: 60px;
         padding-bottom: 20px;
+    }
+    .Rasch h2{
+        padding-top: 60px;
+        padding-bottom: 0px;
     }
 }
 @media(max-width: 1030px){
@@ -849,9 +866,14 @@ footer{
         position:absolute;
         background:rgba(0,0,0,0.4);
     }
+    .section3{
+        background: url(../img/Cherta.png) 50% 12%  no-repeat;
+        height: 1000px;
+    }
     
 }
 @media(max-width: 991px) and (max-height: 700px){
+
     .title__container input{
         margin: 20px 20px 0px 14px;
     }
@@ -861,6 +883,7 @@ footer{
     .title__container h4{
         margin-top: 20px;
     }
+
 }
 @media(max-width:900px){
     .menu1{ 
@@ -869,7 +892,7 @@ footer{
         display:flex;
         flex-wrap:wrap;
     }
-    
+
     .section6{
         background: url(../img/Cherta.png) 50% 15%  no-repeat,
         url(../img/FonContacts.jpg) 50% 50%  no-repeat;
@@ -911,6 +934,9 @@ footer{
     }
 }
 @media(max-width: 800px){
+    .section3{
+        height: 1000px;
+    }
     .Fon3text1{
         float: none;
     }
@@ -918,6 +944,9 @@ footer{
         padding-top: 10px;
         padding-left: 10%;
         padding-right: 10%;
+    }
+    .section4{
+        height: 700px;
     }
     .Payment h2{
         padding-top: 30px;
@@ -1012,6 +1041,8 @@ footer{
         font-size: 16px;
         color: #76828e;
     }
+    
+
 
     .section5{
         background: url(../img/Cherta.png) 50% 20%  no-repeat,
@@ -1093,7 +1124,13 @@ footer{
         margin: 10px 0px 0px 0px;
     }
     .section3{
-        background: url(../img/Cherta.png) 50% 9%  no-repeat;;
+        background: url(../img/Cherta.png) 50% 12%  no-repeat;;
+    }
+    .Message{
+        padding-top: 0px;
+    }
+    .inpuut{
+        padding-top: 0px;
     }
 }
 @media(max-width: 470px){
@@ -1102,8 +1139,13 @@ footer{
     }
     .section1{
         height: 840px;
-        background: url(../img/Cherta.png) 50% 7%  no-repeat, 
+        background: url(../img/Cherta.png) 50% 10%  no-repeat, 
         url(../img/Boy1.png) 50% 20% no-repeat;
+    }
+
+    .section3{
+        height: 800px;
+        background: url(../img/Cherta.png) 50% 15%  no-repeat;
     }
     .Fon3 img{
         display:none;
@@ -1131,9 +1173,6 @@ footer{
     .Rad{
         padding-top: 25px;
         text-align: center;
-    }
-    .section3{
-        height: 1770px;
     }
 }
 
@@ -1282,6 +1321,9 @@ footer{
 @media(max-width: 332px){
     .logo{
         font-size: 20px;
+    }
+    .title1 h5{
+        font-size: 18px;
     }
 }
 @media(min-width: 1910px){
