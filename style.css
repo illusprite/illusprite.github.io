@@ -72,8 +72,7 @@ main{
     color:white;
 }
 .menu{
-    float: left;
-    
+    float: left;   
 }
 .menu li{
     float: left;
@@ -120,6 +119,10 @@ main{
     animation-delay:0.5s;
 }
 
+.menu li a.active{
+    color:#f09638;
+}
+
 .main{
     width: 100%;
     height: 100%;
@@ -131,15 +134,27 @@ main{
     color: #2a3e51;
     text-align: center;
     width: 100%;
-    /*opacity: 0;
-    -webkit-animation:titlemove 1s ease;
-    -o-animation:titlemove 1s ease;
-    animation:titlemove 1s ease;           
+    opacity: 0;
+    -webkit-animation:titlemove 1s ease forwards;
+    -o-animation:titlemove 1s ease forwards;
+    animation:titlemove 1s ease forwards;           
    
     -webkit-animation-delay:titlemove 1s;
     -o-animation-delay:titlemove 1s;
-    animation-delay:titlemove 1s;*/
+    animation-delay:titlemove 1s;
 }
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -100%;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+
 .title__container h1{
     font-size: 72px;
     font-family: Arial, sans-serif;
@@ -182,16 +197,7 @@ main{
         opacity: 1;
     }
 }
-@keyframes titlemove{
-    from{
-        opacity: 0;
-        margin-left: -500px;
-    }
-    to{
-        opacity: 1;
-        margin-left: 404px;
-    }
-}
+
 @keyframes topshift{
     from{
         opacity: 0;
@@ -222,8 +228,20 @@ main{
     font-size: 20px;
     color: #76828e;
     margin: 340px 400px 0px 400px;
-
 }
+.element-animation{
+    opacity: 0;
+}
+.element-animation.show-animation{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.dataset{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
 .title1 input{
     font-size: 20px;
     border: 2px solid #2a3e51;
@@ -365,6 +383,13 @@ main{
     margin: 0px 30px 0px 30px;
     text-align: center;
 }
+
+.carousel.slide{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
 .Fon3{
     text-align: center;
 }
@@ -607,7 +632,7 @@ main{
 
 .section5{
     width: 100%;
-    height: 637px;
+    height: 700px;
     background: url(../img/Cherta.png) 50% 24%  no-repeat,
     url(../img/FonMan.png) 50% 40%  no-repeat,
     url(../img/FonOtzyvy.png) 50% 50%  no-repeat;
@@ -631,6 +656,40 @@ main{
     padding-top: 40px;
     color: #2a3e51;
 }
+
+.rev_slider{
+    width: 70%;
+
+}
+
+.photo{
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+} 
+ul.slick-dots li button:before{
+    font-size:20px;
+}
+.TextReviews{
+    color: #2a3e51;
+    font-size:18px;
+}
+.slick-prev.slick-arrow{
+    background-color: #2a3e51;
+}
+.slick-prev.slick-arrow:before{
+    background-color: #2a3e51;
+}
+.slick-next.slick-arrow{
+    background-color: #2a3e51;
+}
+.slick-next.slick-arrow:before{
+    background-color: #2a3e51;
+}
+
 .Rad{
     padding-top: 50px;
     text-align: center;
@@ -808,6 +867,9 @@ footer{
     .Here h4{
         margin:0px 0px 0px 40%;
     }
+    .rev_slider{
+        width: 40%;
+    }
 }
 @media(max-width: 1470px){
     .title1 h5{
@@ -847,6 +909,9 @@ footer{
         padding-top: 60px;
         padding-bottom: 0px;
     }
+    .rev_slider{
+        width: 50%;
+    }
 }
 @media(max-width: 1030px){
     .title__container, .title__container h4, .title__container input{
@@ -871,6 +936,9 @@ footer{
         height: 1000px;
     }
     
+    .rev_slider{
+        width: 60%;
+    }
 }
 @media(max-width: 991px) and (max-height: 700px){
 
@@ -1116,7 +1184,12 @@ footer{
         margin-top: 10px;     
     }   
 
-
+    .section5{
+        height: 800px;
+        background: url(../img/Cherta.png) 50% 16%  no-repeat,
+        url(../img/FonMan.png) 50% 27%  no-repeat,
+        url(../img/FonOtzyvy.png) 50% 50%  no-repeat;
+    }
 }
 
 @media(max-width: 550px){
