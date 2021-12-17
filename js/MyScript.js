@@ -26,13 +26,18 @@ if(menuLinks.length > 0) {
 	}
 }
 
+//Замануха))
+function TimeOut(){
+	setTimeout(function(){
+		$('#modal').modal('show');
+	}, 5000);
+}
+$(document).ready(function(){
+	TimeOut();
+});
 
 
-
-//Попытка подсвечивать активное меню
-
-//ПОЧЕМУ НЕ РАБОТАЕТ ААААА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
-
+//Подсвечивать активное меню
 $(window).scroll(()=>{
 	let scrollDistance = $(window).scrollTop();
 
@@ -49,11 +54,118 @@ $(window).scroll(()=>{
 		}
 	});
 });
+$( "section" ).each(function( index ) {
+  	console.log( index + ": " + $( this ).text() );
+});
+
+//Отложенная анимация Текст
+$(document).ready(function(){
+	let options = {threshold:[0.5]};
+	let observer = new IntersectionObserver(onEntry1, options);
+	let elements = $('.element-animation');
+	elements.each((i, el) => {
+		observer.observe(el); //Даём обсёрверу элемент для слежки
+
+	});
+});
+function onEntry1(entry1) { //функция принимает всю информацию об элементе слежки
+	entry1.forEach(change => {
+		if(change.isIntersecting){
+			change.target.classList.add('show-animation');
+		}
+	});
+}
+
+//Отложенная анимация Картинки  ???
+$(document).ready(function(){
+	let options = {threshold:[0.5]};
+	let observer = new IntersectionObserver(onEntry2, options);
+	let elements = $('.Anim');
+	elements.each((i, el) => {
+		observer.observe(el);
+	});
+});
+function onEntry2(entry2) {
+	entry2.forEach(change => {
+		if(change.isIntersecting){
+			change.target.src = change.target.dataset.src;
+		}
+	});
+}
+//Отложенная анимация Немного статистики
+$(document).ready(function(){
+	let options = {threshold:[0.5]};
+	let observer = new IntersectionObserver(outNum1, options);
+	let elements = $('.Option2 b');
+	elements.each((i, el) => {
+		observer.observe(el);
+	});
+});
+//Функция выполняется каждый раз, когда мы вновь видим эти элементы.
+//В добавок, она перезаписывает цифры, которые успели увидеть в последний раз.
+const time1 = 1000;
+const step1 = 1;
+let k=true;
+function outNum1(a){
+	a.forEach(b =>{	
+		if(b.isIntersecting & k==true){
+			k = false;	
+			console.log(b.target);
+			
+				$('b').each(function(){
+					$(this).prop('Anim', 0).animate({
+						Counter: $(this).text()
+					},{
+						duration: 1000,
+						easing: 'swing',
+						step: function(now){
+							$(this).text(Math.ceil(now));
+						}
+					});
+				});
+				
 
 
+				
+		}
+	});
+}	
+
+
+$(".Option2 b").each(function( index ) {
+  	console.log( index + ": " + $( this ).text() );
+});
+
+/*
+$('b').each(function(){
+	$(this).prop('Anim', 0).animate({
+		Counter: $(this).text()
+	},{
+		duration: 2000,
+		easing: 'swing',
+		step: function(now){
+			$(this).text(Math.ceil(now));
+		}
+	});
+});
+
+
+$('.Option2 b').each((i, el) => {
+				console.log(i);
+				console.log($(el).text());
+				console.log($(el).attr('id'));
+
+});
+*/
+//outNum($(el).text(), $(el).attr('id'));
+
+//Магнифик
+$(document).ready(function() {
+  	$('.image-link').magnificPopup({type:'image'});
+});
 
 //Для анимации цифр num - число на ввод, elem - куда будем записывать результат
-const time = 300;
+const time = 1000;
 const step = 100;
 
 function outNum(num, elem){
@@ -65,7 +177,7 @@ function outNum(num, elem){
 		if (n==num){
 			clearInterval(interval);
 		}
-		l.innerHTML=n;
+		l.innerHTML=n + " рублей.";
 	},
 		t);
 }
@@ -123,6 +235,15 @@ function fun3() {
   	console.log(AdaptabilityPrice);
 }
 
-
+//Отзывы
+$(function(){
+	$('.rev_slider').slick({
+		arrows: true,
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		speed: 1000,
+	});
+});
 
 

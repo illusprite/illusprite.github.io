@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/my-fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 
 <body>
@@ -57,9 +60,32 @@
       </div>  
     </nav>
   </header>
-  
+
+  <!-- Modal с заманухой))-->
+  <div class="Modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="Modal-dialog">
+      <div class="Modal-content">
+        <div class="Modal-header">
+          <h5 class="Modal-title" id="modalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="Modal" aria-label="Close"></button>
+        </div>
+        <div class="Modal-body">
+          Падажжи, не уходи. Скидочку дам 20%)) Это будет лучшая сделка в твоей жизни (честно (да))!
+        </div>
+        <div class="Modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="Modal">Остаюсь</button>
+          <button type="button" class="btn btn-primary">И тут остаюсь</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
   <main>
-    <section class="main">
+    <div class="main">
       <div class="container h-100">
         <div class="row align-items-center h-100">
           <div class="col-lg-6 mt-5 pt-5">
@@ -72,14 +98,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <section class="page__section page__section_1">
     <div class="section1" id="OboMne">
       <div class="title1">
         <h2>ОБО МНЕ</h2>
-        <h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p>
+        <h5 class="element-animation"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p>
         <br>
         <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at. Dius sed dapibus leo nec ornare diam commondo nibh.</p></h5>
@@ -125,7 +151,56 @@
   <section class="page__section page__section_3">
     <div class="section3" id="Case"><div class="Cases"><h2>КЕЙСЫ</h2></div>
       <div class="text"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dius sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</h5></div>
-      <div class="Fon3"><img src="img/Fon3.jpg" alt=""></div>
+
+        <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Тык на слайдер
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Fon3.jpg" href="img/Fon3.jpg" class="image-link d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Fon3.jpg" href="img/Fon3.jpg" class="image-link d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Fon3.jpg" href="img/Fon3.jpg" class=" mage-link d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+
+
+
+      
       <div class="Fon3text1">
         <h3>CLIENT:</h3><h5><p>Текст Веб-дизайна</p></h5>
         <h3>WEBSITE:<h5><p>http://www.somedomain.com</p></h5></h3>
@@ -169,7 +244,7 @@
             <h3>Стоимость</h3>
             <div class="Itog1">
               <h3 id="Time1">0 дней.</h3>
-              <h3 id="Price1"><div id="out-1" class="out-num">0</div> рублей.</h3>
+              <h3 id="Price1"><div id="out-1" class="out-num">0 рублей.</div></h3>
             </div> 
         </div>
       </div>
@@ -179,20 +254,20 @@
       <img src="img/Cherta.png" alt=""></div>
       <div class="Option2">
         <div class="Smile">
-            <img src="img/Smile.png" >
-            <h5><b>120</b><p>СЧАСТЛИВЫХ КЛИЕНТОВ</p></h5>
+            <img class="Anim image-link" src="img/Cherta.png" href="img/Smile.png" data-src="img/Smile.png">
+            <h5><b id="b1">120</b><p>СЧАСТЛИВЫХ КЛИЕНТОВ</p></h5>
         </div>
         <div class="Znak2">
-            <img src="img/Znak2.png" >
-            <h5><b>4600</b><p>ЧАСОВ РОБОТЫ</p></h5>
+            <img class="Anim image-link" src="img/Cherta.png" href="img/Znak2.png"data-src="img/Znak2.png">
+            <h5><b id="b2">4600</b><p>ЧАСОВ РОБОТЫ</p></h5>
         </div>
         <div class="Galochka">
-            <img src="img/Galochka.png" >
-            <h5><b>340</b><p>ПРОЕКТОВ ЗАВЕРШЕНО</p></h5>
+            <img class="Anim image-link" src="img/Cherta.png" href="img/Galochka.png" data-src="img/Galochka.png">
+            <h5><b id="b3">340</b><p>ПРОЕКТОВ ЗАВЕРШЕНО</p></h5>
         </div>
         <div class="Cup">
-            <img src="img/Cup.png" >
-            <h5><b>23</b><p>НАГРАД ПОЛУЧЕНО</p></h5>
+            <img class="Anim image-link" src="img/Cherta.png" href="img/Cup.png" data-src="img/Cup.png">
+            <h5><b id="b4">23</b><p>НАГРАД ПОЛУЧЕНО</p></h5>
         </div>
       </div>
 
@@ -203,13 +278,29 @@
     <div class="section5" id="Reviews">
       <h2>ОТЗЫВЫ</h2>
       <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commondo nibh ante facilisis bibendum dolor feugiat at dius sed dapibus leo nec ornare diam.
-      <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p></h5>
-      <div class="Rad">
-        <input type="radio" name="text_input1">
-        <input type="radio" name="text_input1">
-        <input type="radio" name="text_input1">
+      <p>Михаил, Ген директор ПАО "Газпром".</p></h5>
+
+      <div class="rev_slider mx-auto">
+        <div class="slide">
+          <div class="photo" style="background-image: url(img/unknown.png);"></div>
+          <h4 class="name">Владос</h4>
+          <div class="TextReviews">Вообще чётко делает, я не могу. Такой балдёжный стиль у парня, а пишет-то как. Уфф</div>
+        </div>
+      
+        <div class="slide">
+            <div class="photo" style="background-image: url(img/unknown.png);"></div>
+            <h4 class="name">Максон</h4>
+            <div class="TextReviews">Могёт, умеет. Специалист.</div>
+        </div>
+
+        <div class="slide">
+            <div class="photo" style="background-image: url(img/unknown.png);"></div>
+            <h4 class="name">Толян</h4>
+            <div class="TextReviews">Делает быстро, красиво, без лишних телодвижений. Всё грамотно, по цене сошлись. Всем советую.</div>
+        </div>
       </div>
     </div>
+
   </section>
 
   <section class="page__section page__section_6">
@@ -247,8 +338,10 @@
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/MyScript.js"></script>
-
+  
 </body>
 </html>
 
