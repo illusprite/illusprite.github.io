@@ -366,7 +366,7 @@ main{
 
 .section3{
     width: 100%;
-    height: 1100px;
+    height: 1200px;
     background: url(../img/Cherta.png) 50% 11%  no-repeat;
 }
 .section3 h2{
@@ -452,7 +452,7 @@ main{
     height: 800px;
 }
 .Payment h2{
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 0px;
     font-size: 36px;
     color: #2a3e51;
@@ -1217,7 +1217,7 @@ footer{
     }
 
     .section3{
-        height: 800px;
+        height: 900px;
         background: url(../img/Cherta.png) 50% 15%  no-repeat;
     }
     .Fon3 img{

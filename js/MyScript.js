@@ -29,7 +29,7 @@ if(menuLinks.length > 0) {
 //Замануха))
 function TimeOut(){
 	setTimeout(function(){
-		$('#modal').modal('show');
+		$('#ModaL').modal('show');
 	}, 5000);
 }
 $(document).ready(function(){
