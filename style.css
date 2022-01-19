@@ -40,6 +40,14 @@
 }
 /*Выше всё для лоадера*/
 
+/*АААААААААААААААААААААААААААААААААААААа*/
+
+.modal-open {
+    overflow-y: auto !important;
+}
+body.modal-open{
+    overflow-y: hidden;
+}
 /*
 html, body {
     /* Убирает прокрутку по горизонтали, для мобильной версии 
@@ -49,7 +57,7 @@ html, body {
 nav{
     width: 100%;
     height: 60px;
-    background: #2a3e51;
+    background: #7c0024;
     position:fixed;
     z-index:100;
 }
@@ -126,12 +134,12 @@ main{
 .main{
     width: 100%;
     height: 100%;
-    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, 
-    url(../img/bg.jpg) center/cover no-repeat;
+    background:  
+    url(../img/First.jpg) center/cover no-repeat;
 }
 .title__container{
     float: left; 
-    color: #2a3e51;
+    color: white;
     text-align: center;
     width: 100%;
     opacity: 0;
@@ -163,15 +171,15 @@ main{
 .title__container h4{
     margin-top: 40px;
     font-size: 22px;
-    color: #76828e;
+    color: white;
 }
 .title__container input{
     height: 40px;
     text-align: center;
-    border: 2px solid #2a3e51;
+    border: 2px solid white;
     background: none;
     border-radius: 5px;
-    color: #76828e;
+    color: white;
     font-size:13px;
     padding: 0px 16px;
     margin: 50px 20px 0px 14px;
@@ -180,8 +188,8 @@ main{
     transform: scale(1);
 }
 .title__container input:hover{
-    background: #2a3e51;
-    color:white;
+    background: white;
+    color:black;
 }
 .title__container input:active{
     transform: scale(1.1);
@@ -209,24 +217,23 @@ main{
     }
 }
 
-
 .section1{
     text-align: center;
     width: 100%;
     height: 720px;
     background: url(../img/Cherta.png) 50% 12%  no-repeat, 
-    url(../img/Boy1.png) 50% 29% no-repeat, 
+    url(../img/unknown1.png) 50% 29%/8% no-repeat, 
     url(../img/Fon1.jpg) center/cover no-repeat;
 }
 .title1 h2{
     font-size: 36px;
-    color: #2a3e51;
+    color: black;
     font-weight: bold;
     padding-top: 25px;
 }
 .title1 h5{
     font-size: 20px;
-    color: #76828e;
+    color: #3e383f;
     margin: 340px 400px 0px 400px;
 }
 .element-animation{
@@ -244,19 +251,21 @@ main{
 
 .title1 input{
     font-size: 20px;
-    border: 2px solid #2a3e51;
+    border: 2px solid #7c0024;
     border-radius: 5px;
     padding: 5px 25px;
     margin: 40px 20px 0px 14px;
-    background: url(../img/Icon.png) 5% 50%/auto 70% no-repeat,
-    url(../img/Icon.png) 95% 50%/auto 70% no-repeat;
+    background: #7c0024;
+    color: #ffffff;
     padding-left: 40px;
     padding-right: 40px;
     display: inline-block;
+    transition: all 0.2s;
     transform: scale(1);
 }
 .title1 input:hover{
-    background: #2a3e51;
+    background: #f09638; 
+    border: 2px solid #f09638;
     color:white;
 }
 .title1 input:active{
@@ -268,11 +277,11 @@ main{
     width: 100%;
     height: 522px;
     background: url(../img/Cherta.png) 50% 26%  no-repeat, 
-    url(../img/ChtoYaUmeu.jpg) center/cover no-repeat;
+    url(../img/ChtoYaUmeu2.jpg) center/cover no-repeat;
 }
 .title2 h2{
     font-size: 36px;
-    color: #2a3e51;
+    color: white;
     font-weight: bold;
     text-align: center;
     line-height: 140px;
@@ -297,14 +306,14 @@ main{
 }
 .Nout h5{
     margin-top: 40px;
-    color: #eb7800;
+    color: white;
     font-size: 18px;
     font-weight: bold;
 }
 .Nout p{
     margin-top: 20px;
     font-size: 20px;
-    color: #76828e;
+    color: white;
 }
 
 .Znak{
@@ -316,14 +325,14 @@ main{
 }
 .Znak h5{
     margin-top: 40px;
-    color: #eb7800;
+    color: white;
     font-size: 18px;
     font-weight: bold;
 }
 .Znak p{
     margin-top: 20px;
     font-size: 20px;
-    color: #76828e;
+    color: white;
 }
 
 .Rocket{
@@ -335,14 +344,14 @@ main{
 }
 .Rocket h5{
     margin-top: 40px;
-    color: #eb7800;
+    color: white;
     font-size: 18px;
     font-weight: bold;
 }
 .Rocket p{
     margin-top: 20px;
     font-size: 20px;
-    color: #76828e;
+    color: white;
 }
 
 .G-n{
@@ -354,32 +363,107 @@ main{
 }
 .G-n h5{
     margin-top: 40px;
-    color: #eb7800;
+    color: white;
     font-size: 18px;
     font-weight: bold;
 }
 .G-n p{
     margin-top: 20px;
     font-size: 20px;
-    color: #76828e;
+    color: white;
 }
 
 .section3{
     width: 100%;
-    height: 1200px;
-    background: url(../img/Cherta.png) 50% 11%  no-repeat;
+    height: 700px;
+    background: url(../img/Cherta.png) 50% 19%  no-repeat;
 }
+
+
+
+.boody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0;
+}
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.informBlock {
+    width: 30%;
+    height: 400px;
+    background: #1b1b1b;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+.ii{
+    text-align: center;
+}
+
+.informBlock i {
+    color: #e9204f;
+    font-size: 100px;
+    margin-top: 30px;
+    transition: .4s;
+}
+
+.mainText {
+    color: #fff;
+    margin: 80px 0 0 0;
+    font-size: 20px;
+}
+
+.underlineBlock {
+    height: 0;
+    width: 35px;
+    border-top: 2px solid #e9204f;
+    margin-top: 10px;
+    transition: .4s;
+}
+
+.secondText {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.informBlock:hover {
+    background: #7c0024;
+}
+
+.informBlock:hover i {
+    color: #fff;
+}
+
+.informBlock:hover .underlineBlock {
+    border-color: #fff;
+}
+
+
+
+
+
+
+
 .section3 h2{
     padding-top: 60px;
     padding-bottom: 50px;
     font-size: 36px;
-    color: #2a3e51;
+    color: black;
     font-weight: bold;
     text-align: center;  
 }
 .text{
     font-size: 20px;
-    color: #76828e;
+    color: #3e383f;
     margin: 0px 30px 0px 30px;
     text-align: center;
 }
@@ -398,26 +482,26 @@ main{
 }
 .section3 h3{
     font-size: 28px;
-    color: #2a3e51;
+    color: #3e383f;
     font-weight: bold; 
     margin-bottom: 10px;
 }
 .section3 h5{
     margin-bottom: 10px;
-    color: #2a3e51;
+    color: #3e383f;
 }
 
 .Fon3text1{
     margin: 0px 0px 0px 10%;
     float: left;   
-    color: #2a3e51;
+    color: #3e383f;
 }
 .Fon3text1 input{
     height: 44px;
     width: 200px;
     text-align: center;
-    border: 2px solid #00b6af;
-    background: #00b6af;
+    border: 2px solid #7c0024;
+    background: #7c0024;
     border-radius: 5px;
     color: #ffffff;
     font-size:18px;
@@ -439,23 +523,23 @@ main{
 .Fon3text2{
     padding-left: 800px;
     padding-right: 350px;
-    color: #2a3e51;
+    color: #3e383f;
 }
 .Fon3text2 p{
     line-height: 20px;
-    color: #2a3e51;
+    color: #3e383f;
 }
 
 
 .section4{
     width:100%;
-    height: 800px;
+    height: 900px;
 }
 .Payment h2{
     padding-top: 80px;
     padding-bottom: 0px;
     font-size: 36px;
-    color: #2a3e51;
+    color: black;
     font-weight: bold;
     text-align: center;  
 }
@@ -514,6 +598,7 @@ main{
 }
 .Itog h3{
     font-size: 20px;
+    color: #3e383f;
 }
 
 .Itog1{
@@ -522,7 +607,7 @@ main{
 }
 .Itog1 h3{
     font-size: 20px;
-    color: #2a3e51;
+    color: #3e383f;
     font-weight: bold;
     margin: 10px 0px 0% 10%;
 }
@@ -530,7 +615,7 @@ main{
 .Section4_1 {
     width: 100%;
     height: 500px;
-    background:url(../img/Fon2.jpg) 50% 50% no-repeat; 
+    background:url(../img/Fon22.jpg) 50% 50% no-repeat; 
     background-attachment: fixed;   
 }
 
@@ -542,7 +627,7 @@ main{
 }
 .Stats h2{
     font-size: 36px;
-    color: #2a3e51;
+    color: black;
     font-weight: bold;
 }
 .Stats img{
@@ -563,14 +648,14 @@ main{
 }
 .Smile h5{
     margin-top: 20px;
-    color: #283c4f;
+    color: #3e383f;
     font-size: 30px;
     font-weight: bold;
 }
 .Smile p{
     margin-top: 20px;
     font-size: 15px;
-    color: #283c4f;
+    color: #3e383f;
 }
 
 .Znak2{
@@ -582,14 +667,14 @@ main{
 }
 .Znak2 h5{
     margin-top: 20px;
-    color: #283c4f;
+    color: #3e383f;
     font-size: 30px;
     font-weight: bold;
 }
 .Znak2 p{
     margin-top: 20px;
     font-size: 15px;
-    color: #283c4f;
+    color: #3e383f;
 }
 
 .Galochka{
@@ -601,14 +686,14 @@ main{
 }
 .Galochka h5{
     margin-top: 20px;
-    color: #283c4f;
+    color: #3e383f;
     font-size: 30px;
     font-weight: bold;
 }
 .Galochka p{
     margin-top: 20px;
     font-size: 15px;
-    color: #283c4f;
+    color: #3e383f;
 }
 
 .Cup{
@@ -620,21 +705,21 @@ main{
 }
 .Cup h5{
     margin-top: 20px;
-    color: #283c4f;
+    color: #3e383f;
     font-size: 30px;
     font-weight: bold;
 }
 .Cup p{
     margin-top: 20px;
     font-size: 15px;
-    color: #283c4f;
+    color: #3e383f;
 }
 
 .section5{
     width: 100%;
     height: 700px;
-    background: url(../img/Cherta.png) 50% 24%  no-repeat,
-    url(../img/FonMan.png) 50% 40%  no-repeat,
+    background: url(../img/Cherta.png) 50% 20%  no-repeat,
+    url(../img/FonMan.png) 50% 35%/7%  no-repeat,
     url(../img/FonOtzyvy.png) 50% 50%  no-repeat;
 }
 
@@ -642,7 +727,7 @@ main{
     padding-top: 70px;
     padding-bottom: 35px;
     font-size: 36px;
-    color: #2a3e51;
+    color: black;
     font-weight: bold;
     text-align: center;
 }
@@ -650,11 +735,11 @@ main{
     width: 70%;
     margin: 230px 15% 0px 15%;
     text-align: center;
-    color: #2a3e51;
+    color: #3e383f;
 }
 .section5 p{
     padding-top: 40px;
-    color: #2a3e51;
+    color: #3e383f;
 }
 
 .rev_slider{
@@ -674,20 +759,20 @@ ul.slick-dots li button:before{
     font-size:20px;
 }
 .TextReviews{
-    color: #2a3e51;
+    color: #3e383f;
     font-size:18px;
 }
 .slick-prev.slick-arrow{
-    background-color: #2a3e51;
+    background-color: #3e383f;
 }
 .slick-prev.slick-arrow:before{
-    background-color: #2a3e51;
+    background-color: #3e383f;
 }
 .slick-next.slick-arrow{
-    background-color: #2a3e51;
+    background-color: #3e383f;
 }
 .slick-next.slick-arrow:before{
-    background-color: #2a3e51;
+    background-color: #3e383f;
 }
 
 .Rad{
@@ -699,7 +784,7 @@ ul.slick-dots li button:before{
     width:100%;
     height: 808px;
     background: url(../img/Cherta.png) 50% 17%  no-repeat,
-    url(../img/FonContacts.jpg) 50% 50%  no-repeat;
+    url(../img/FonContacts2.jpg) 50% 50%  no-repeat;
 }
 .section6 h2{
     padding-top: 70px;
@@ -829,27 +914,16 @@ ul.slick-dots li button:before{
 }
 .inpuut input:hover{
     background: #fff;
-    color:#2a3e51;
+    color:#1b3f61;
 }
 .inpuut input:active{
     transform: scale(1.1);
-}
-.Here{
-    width:100%;
-    height: 350px;
-    background: url(../img/Here.png) 47% 50%  no-repeat,
-    url(../img/Karta.jpg) 50% 50%  no-repeat;
-}
-.Here h4{
-    margin: 0px 0px 0px 870px;
-    padding-top: 163px;
-    font-weight: bold;
 }
 
 footer{
     width:100%;
     height:90px;
-    background: #2a3e51;
+    background: #7c0024;
 }
 .footer{
     line-height: 90px;
@@ -859,6 +933,7 @@ footer{
 .icon-uncorn{
     font-size: 40px;
 }
+
 
 @media(max-width: 3000px){
     .inpuut{
@@ -932,10 +1007,12 @@ footer{
         background:rgba(0,0,0,0.4);
     }
     .section3{
-        background: url(../img/Cherta.png) 50% 12%  no-repeat;
-        height: 1000px;
+        background: url(../img/Cherta.png) 50% 18%  no-repeat;
+        height: 700px;
     }
-    
+    .informBlock i {
+        font-size: 80px;
+    }
     .rev_slider{
         width: 60%;
     }
@@ -959,6 +1036,13 @@ footer{
         margin:20px 2% 0px 2%;  
         display:flex;
         flex-wrap:wrap;
+    }
+    .wrap {
+        width: 90%;
+    }
+
+    .informBlock i {
+        font-size: 60px;
     }
 
     .section6{
@@ -1002,9 +1086,6 @@ footer{
     }
 }
 @media(max-width: 800px){
-    .section3{
-        height: 1000px;
-    }
     .Fon3text1{
         float: none;
     }
@@ -1050,7 +1131,7 @@ footer{
     .Nout p{
         margin-top: 10px;
         font-size: 16px;
-        color: #76828e;
+        color: #375674;
     }
 
     .Znak{
@@ -1069,7 +1150,7 @@ footer{
     .Znak p{
         margin-top: 10px;
         font-size: 16px;
-        color: #76828e;
+        color: #375674;
     }
 
     .Rocket{
@@ -1088,7 +1169,7 @@ footer{
     .Rocket p{
         margin-top: 10px;
         font-size: 16px;
-        color: #76828e;
+        color: #375674;
     }
 
     .G-n{
@@ -1107,7 +1188,7 @@ footer{
     .G-n p{
         margin-top: 10px;
         font-size: 16px;
-        color: #76828e;
+        color: #375674;
     }
     
 
@@ -1196,9 +1277,39 @@ footer{
     .title1 input{
         margin: 10px 0px 0px 0px;
     }
-    .section3{
-        background: url(../img/Cherta.png) 50% 12%  no-repeat;;
+
+
+    .informBlock {
+        padding: 10px;
+        box-sizing: border-box;
+        transition: .4s;
     }
+    .informBlock i {
+        font-size: 40px;
+    }
+
+    .mainText {
+        color: #fff;
+        margin: 40px 0 0 0;
+        font-size: 20px;
+    }
+
+    .underlineBlock {
+        height: 0;
+        width: 35px;
+        border-top: 2px solid #e9204f;
+        margin-top: 10px;
+        transition: .4s;
+    }
+
+    .secondText {
+        color: #fff;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+
+
     .Message{
         padding-top: 0px;
     }
@@ -1216,10 +1327,7 @@ footer{
         url(../img/Boy1.png) 50% 20% no-repeat;
     }
 
-    .section3{
-        height: 900px;
-        background: url(../img/Cherta.png) 50% 15%  no-repeat;
-    }
+
     .Fon3 img{
         display:none;
     }
